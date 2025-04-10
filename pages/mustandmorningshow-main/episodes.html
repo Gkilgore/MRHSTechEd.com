@@ -1,0 +1,170 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Mustang Morning Show</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+    <link rel="stylesheet" href="episodes.css">
+
+    <!-- jQuery -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+
+
+    <!-- FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+    <script>
+
+    </script>
+</head>
+
+<body>
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+            <button class="navbar-toggler bg-white" type="button " data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-between" id="navbarSupportedContent">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="text-white nav-link" href="sports.html">SPORTS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="text-white nav-link" href="team.html">TEAM</a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="index.html">
+                      <img src="imgs/homenavbaricon.png">
+                      </a>
+                  </li>
+                    <li class="nav-item">
+                        <a class="text-white nav-link" href="episodes.html">EPISODES</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="text-white nav-link" href="schedule.html">SCHEDULE</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- navbar -->
+    <div class="container container1">
+      <div class="row">
+        <div class="col-md-7 mt-5 ">
+          <img src="imgs/mustanglogov (1)-1.png" class="leftpic">
+        </div>
+
+        </div>
+        </div>
+
+
+
+
+
+
+        <div class="container0 center-container text-center">
+          <!-- Title for the season -->
+          <h2 id="seasonTitle" class="mb-4 text-uppercase"></h2>
+      
+          <div class="dropdown">
+            <button class="btn text-white dropdown-toggle text-uppercase" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false" style="background-color: #3361AC;">
+              Seasons
+            </button>
+            <ul class="dropdown-menu text-white" aria-labelledby="dropdownMenuButton">
+              <li><a class="dropdown-item text-uppercase" id="season1">Season 1</a></li>
+              <li><a class="dropdown-item text-uppercase" id="season2">Season 2</a></li>
+            </ul>
+          </div>
+      
+          <div id="imageGrid" class="mt-4 container0 text-white" style="display: none;">
+            <!-- Images will be inserted here dynamically -->
+          </div>
+        </div>
+      
+        <!-- Modal Structure -->
+        <div class="modal fade" id="episodeModal" tabindex="-1" aria-labelledby="episodeModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="episodeModalLabel">Episode Video</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <!-- YouTube Video will be inserted here dynamically -->
+                <div id="videoContainer" class="embed-responsive embed-responsive-16by9">
+                  <iframe id="episodeVideo" class="embed-responsive-item" src="" allowfullscreen></iframe>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      
+  
+        <div class="news-ticker">
+          <div class="ticker-content">
+            PROM TICKETS ON SALE UNTIL THURSDAY | 📢 Stay tuned for more updates! | 🌍 Check your classroom for School Spirit updates
+          </div>
+      </div>
+        
+
+
+
+  <!-- Site footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12 col-md-6">
+          <h6>MUSTANG MORNING SHOW</h6>
+          <p class="text-justify">William Werntz</p>
+          <p class="text-justify">wwerntz@frhsd.com</p>
+          <p class="text-justify">95 N Main St, Marlboro Township, NJ 07746</p>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4 col-sm-6 col-xs-12">
+          <ul class="social-icons">
+            <li><a class="facebook" href="https://www.youtube.com/@MustangMorningShow"><i class="fa fa-facebook"></i></a></li>
+            <li><a class="twitter" href="https://x.com/marlborohsinnj?lang=en"><i class="fa fa-twitter"></i></a></li> 
+          </ul>
+        </div>
+      </div>
+    </div>
+</footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+        integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+        crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.js"
+        integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    <script>
+        !function (d, s, id) { var js, fjs = d.getElementsByTagName(s)[0]; if (!d.getElementById(id)) { js = d.createElement(s); js.id = id; js.src = 'https://weatherwidget.io/js/widget.min.js'; fjs.parentNode.insertBefore(js, fjs); } }(document, 'script', 'weatherwidget-io-js');
+    </script>
+    <script src="episodes.js"></script>
+</body>
+
+</html>

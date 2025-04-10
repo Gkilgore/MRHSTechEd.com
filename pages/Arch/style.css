@@ -1,0 +1,340 @@
+body {
+    font-family: "Marcellus", serif;
+    margin: 0;
+    padding: 0;
+    background-color: #e0e0e0;
+}
+
+h1, h2, h3 {
+    color: #333;
+}
+
+p {
+    color: #555;
+    line-height: 1.6;
+}
+
+a {
+    text-decoration: none;
+    color: #3498db;
+}
+
+#hero {
+    position: relative;
+    background-size: cover;
+    background-position: center;
+}
+
+#hero .hero-content {
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.6);
+    padding: 40px;
+    border-radius: 10px;
+}
+
+#program-overview {
+    background-color: #fff;
+}
+
+#faculty .faculty-member {
+    margin-bottom: 30px;
+}
+
+#faculty .faculty-member img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    margin-bottom: 15px;
+    border: 2px solid black;
+    border-radius: 10px;
+}
+
+#gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    margin: 30px auto;
+    max-width: 1200px;
+    padding: 0 15px;
+}
+
+.gallery-img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border: 2px solid black;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.gallery-img:hover {
+    opacity: 0.8;
+    transform: scale(1.05);
+}
+
+#contact {
+    background-color: #f8f9fa;
+    padding: 40px 0;
+    text-align: center;
+}
+
+.btn {
+    padding: 12px 25px;
+    font-size: 16px;
+    font-weight: 600;
+    text-transform: uppercase;
+    border: 2px solid transparent;
+    border-radius: 30px;
+    background-color: #1e455f;
+    color: #fff;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 8px rgba(52, 152, 219, 0.2);
+}
+
+.btn:hover {
+    background-color: #2980b9;
+    color: #fff;
+    transform: translateY(-3px);
+    box-shadow: 0 8px 16px rgba(52, 152, 219, 0.3);
+}
+
+.btn:focus {
+    outline: none;
+    box-shadow: 0 0 0 4px rgba(52, 152, 219, 0.4);
+}
+
+.bordered-section {
+    border: 2px solid black;
+    margin: 40px auto;
+    padding: 30px;
+    max-width: 1200px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+.container {
+    padding: 0 15px;
+    width: 100%;
+}
+
+#program-overview, #faculty, #gallery {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#contact {
+    background-color: #f8f9fa;
+    padding: 40px 0;
+    text-align: center;
+    margin-top: 40px; /* Adds some space above the section */
+  }
+  
+  #contact .container {
+    max-width: 800px; /* Ensures the content doesn’t stretch too wide */
+    margin: 0 auto;
+  }
+  
+  #contact h2 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  #contact p {
+    font-size: 1rem;
+    color: #555;
+    line-height: 1.6;
+  }
+  
+  #contact a {
+    color: #3498db;
+    text-decoration: underline;
+  }
+  
+  #contact a:hover {
+    color: #2980b9;
+  }
+h2 {
+    text-decoration: underline;
+    text-align: center;
+}
+
+.custom-img {
+    border: 2px solid black;
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+
+#gallery .row {
+    margin-bottom: 30px;
+}
+
+#gallery .btn {
+    margin-top: 20px;
+}
+
+#about-arch1-header,
+#course-work1-header,
+#student-work1-header,
+#about-arch2-header,
+#course-work2-header,
+#student-work2-header,
+#about-arch3-header,
+#course-work3-header,
+#student-work3-header {
+    padding: 8px 20px;
+    font-size: 16px;
+    font-weight: 600;
+    text-transform: uppercase;
+    border: 2px solid transparent;
+    border-radius: 30px;
+    background-color: #1e455f;
+    color: #fff;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 8px rgba(52, 152, 219, 0.2);
+    display: block;
+    max-width: 300px;
+    margin: 10px auto;
+}
+
+#about-arch1-header:hover,
+#course-work1-header:hover,
+#student-work1-header:hover,
+#about-arch2-header:hover,
+#course-work2-header:hover,
+#student-work2-header:hover,
+#about-arch3-header:hover,
+#course-work3-header:hover,
+#student-work3-header:hover {
+    background-color: #2980b9;
+    color: #fff;
+    transform: translateY(-3px);
+    box-shadow: 0 8px 16px rgba(52, 152, 219, 0.3);
+    padding: 8px 20px;
+    border-radius: 30px;
+}
+
+.back-to-home {
+    padding: 8px 20px;
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
+    border: 2px solid transparent;
+    border-radius: 30px;
+    background-color: #1e455f;
+    color: #fff;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 8px rgba(52, 152, 219, 0.2);
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    z-index: 1000;
+}
+
+.toggle-header {
+    font-size: 18px;
+    font-weight: 600;
+    color: #333;
+    cursor: pointer;
+    padding: 8px 20px;
+    border: 2px solid transparent;
+    border-radius: 30px;
+    background-color: #fff;
+    transition: all 0.3s ease;
+    display: inline-block;
+    margin: 10px 0;
+}
+
+.toggle-header:hover {
+    color: white;
+    background-color: hsl(204, 52%, 25%);
+    transform: translateY(-3px);
+    box-shadow: 0 8px 16px rgba(52, 152, 219, 0.3);
+    padding: 8px 20px;
+    border-radius: 30px;
+}
+
+.back-to-home {
+    padding: 12px 25px;
+    font-size: 16px;
+    font-weight: 600;
+    text-transform: uppercase;
+    border: 2px solid transparent;
+    border-radius: 30px;
+    background-color: #1e455f;
+    color: #fff;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 8px rgba(52, 152, 219, 0.2);
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    z-index: 1000;
+}
+
+.back-to-home:hover {
+    background-color: #2980b9;
+    color: #fff;
+    transform: translateY(-3px);
+    box-shadow: 0 8px 16px rgba(52, 152, 219, 0.3);
+}
+
+.back-to-home:focus {
+    outline: none;
+    box-shadow: 0 0 0 4px rgba(52, 152, 219, 0.4);
+}
+
+.lightbox {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.lightbox-content {
+    max-width: 90%;
+    max-height: 80%;
+    margin: 0 auto;
+    display: block;
+}
+
+.close {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    font-size: 30px;
+    color: white;
+    cursor: pointer;
+    z-index: 1001;
+}
+
+button {
+    position: absolute;
+    top: 50%;
+    font-size: 30px;
+    color: white;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    transform: translateY(-50%);
+    z-index: 1001;
+}
+
+#prevBtn {
+    left: 10px;
+}
+
+#nextBtn {
+    right: 10px;
+}

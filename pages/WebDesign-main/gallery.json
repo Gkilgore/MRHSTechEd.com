@@ -1,0 +1,153 @@
+{
+        "web1": [
+        {
+            "images": ["img/web1websites/y1portfolio.png"],
+            "keys": { 
+            "author": "Issac E",
+            "site": "Year 1 portfolio",
+            "link": "https://issac-eligulashvili.github.io/Year-1-Portfolio/"
+            }
+        },
+        {
+            "images": ["img/web1websites/halloweenmovies.png"],
+            "keys": {
+            "author": "Claudia B",
+            "site": "Movie reviews",
+            "link": "https://movie-project-11468020.codehs.me/index.html"
+            }
+        },
+        {
+           "images": ["img/web1websites/mixtapecafe.png"],
+           "keys": { 
+            "author": "Zach L",
+            "site": "Cafe",
+            "link": "https://zlevin1228.github.io/Coffee-Shop/"
+           }
+        },
+        {
+            "images": ["img/web1websites/mbeard.png"],
+            "keys": {
+            "author": "Madison B",
+            "site": "About Me",
+            "link": "https://about-me-12256560.codehs.me/index.html"
+            }
+        },
+        {
+            "images": ["img/web1websites/cookies.png"],
+            "keys": {
+            "author": "Ashlee C&Jayden G",
+            "site": "How to",
+            "link": "https://how-to-bake-cookies-12127185.codehs.me/index.html"
+            }
+        },
+        {
+            "images": ["img/web1websites/srashid.png"],
+            "keys": {
+                "author": "Sofia R",
+            "site": "About Me",
+            "link": "https://portfolio-12256544.codehs.me/index.html"
+            }
+        }
+    ],
+"web2": [
+        {
+            "images": ["img/web2websites/summertainment.png"],
+            "keys": { 
+            "author": "Zach L&Randy K",
+            "site": "Summertainment",
+            "link": "https://zlevin1228.github.io/Summertainment/"
+            }
+        },
+        {
+           "images": ["img/web2websites/lookmaimfamous.png"],
+            "keys": { 
+            "author": "Randy K",
+            "site": "LookMaImFamous",
+            "link": "https://rklad.github.io/look-ma-i-m-famous/"
+            } 
+        },
+        {
+            "images": ["img/web2websites/madlibs.png"],
+            "keys": { 
+            "author": "Sophie H",
+            "site": "MadLibs",
+            "link": "https://sophiehornik.github.io/madlib"
+            } 
+        },
+        {
+           "images": ["img/web2websites/onmybirthday.png"],
+            "keys": { 
+            "author": "Mahek M",
+            "site": "On My BDay",
+            "link": "https://mhkmhsh.github.io/january/#romanovs"
+            } 
+        },
+        {
+            "images": ["img/web2websites/rps.png"],
+            "keys": { 
+            "author": "Issac E",
+            "site": "RPS",
+            "link": "https://issac-eligulashvili.github.io/rps/"
+            } 
+        },
+        {
+            "images": ["img/web2websites/littlebirdtoyco.png"],
+            "keys": { 
+            "author": "Kyle R&Brianna D",
+            "site": "LittleBirdToyCo",
+            "link": "https://kylerabkin61.github.io/Final-Project/"
+            } 
+        }
+    ],
+    "web3": [
+        {
+            "images": ["img/web3websites/college.png"],
+            "keys": { 
+            "author": "Matthew P",
+            "site": "College Recruitment",
+            "link": "https://matthewpass24.github.io/College-Recruitment/index.html"
+            }
+        },
+        {
+            "images": ["img/web3websites/slideshow.png"],
+             "keys": { 
+             "author": "Avery W",
+             "site": "NJIT Slideshow",
+             "link": "https://averywh13.github.io/njitslideshow/"
+             } 
+         },
+         {
+             "images": ["img/web3websites/movieposter.png"],
+             "keys": { 
+             "author": "Randy K",
+             "site": "Movie Posters",
+             "link": "https://rklad.github.io/Kladerman-P7/"
+             } 
+         },
+        {
+           "images": ["img/web3websites/teched.png"],
+            "keys": { 
+            "author": "Adam N Daniel B & Jayden Y",
+            "site": "Tech Ed Department",
+            "link": "https://anisenson.github.io/AP-CSA-Marlboro-Tech/index.html"
+            } 
+        },
+        {
+            "images": ["img/web3websites/workbased.png"],
+            "keys": { 
+            "author": "Adam N",
+            "site": "Work Based Project",
+            "link": "https://superiorpaintingnj.com/"
+            } 
+        },
+        
+        {
+            "images": ["img/web3websites/seniorport.png"],
+            "keys": { 
+            "author": "Max R",
+            "site": "Senior Portfolio",
+            "link": "https://mreiss97.github.io/Senior-Year-Portfolio/main.html"
+            } 
+        }
+    ]
+}

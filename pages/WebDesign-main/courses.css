@@ -1,0 +1,463 @@
+body {
+    overflow-x: hidden;
+}
+
+:root {
+    --current-color: #EC3963;
+    
+}
+
+/* Nav and Footer CSS */
+
+nav {
+    text-align: right;
+    background-image: linear-gradient(90deg, #EC3963, #BB67A3, #46A9D3);
+    color: white;
+    font-family: Kanit;
+}
+
+footer {
+    background-image: linear-gradient(90deg, #EC3963, #BB67A3, #46A9D3);
+    color: white;
+    font-family: Kanit;
+    text-align: center;
+    width: 100%;
+}
+
+.nav-link, .navbar-brand {
+    color: white;
+    text-shadow: 1px 1px 2px black;
+
+}
+
+
+  #logo{
+    background-color: transparent;
+    border-color: transparent;
+    background-image: url("img/webdesignlogo.png");
+    height: 60px;
+    width: 60px;
+    border-radius: 100%;
+    background-size: 40px;
+    background-position: center,center;
+    background-repeat: no-repeat;
+    color: white;
+}
+.navbar-brand{
+    color: white;
+}
+.nav-link:link{
+    opacity: 1;
+   }
+.nav-link:visited{
+    opacity: 1;
+   }
+.nav-link:hover{
+ color: #EC3963;
+}
+.nav-link:active{
+    opacity: 1;
+   }
+
+
+/* End of Nav and Footer CSS */
+
+   .imgfix {
+    min-width: 50px;
+    height: 400px;  
+  }
+
+   
+   /*web circles*/
+.webCircle{
+    border-color: #ffffff;
+    color: White;
+    border-radius: 50%;
+    border-width: 0px;
+    margin-top: 10%;
+    font-family: Kanit;
+    text-align: center;
+    text-align: center;
+    box-shadow: 7px 1px 2px  rgb(75, 75, 75);
+    margin-top: 0%;
+    font-size: 4rem;
+    background-color: #808080; /* add color here*/
+    height: 10rem;
+    width: 10rem;
+}
+.webCircle.active {
+    background-color: var(--current-color) !important; /* Optional: Add a border for more visual emphasis */
+}
+.w1:hover{
+    background-color: #EC3963;
+}
+
+.w2:hover{
+    background-color: #BB67A3;
+}
+
+.w3:hover{
+    background-color: #46A9D3;
+}
+.webCircle:hover{
+    
+    border-radius: 50%;
+    border-width: 0px;
+    margin-top: 10%;
+    font-family: Kanit;
+    text-align: center;
+    text-align: center;
+    box-shadow: 7px 1px 2px  rgb(75, 75, 75);
+    
+    margin-top: 0%;
+
+}
+.center {
+    text-align: center;
+    justify-content: center;
+    vertical-align: center;
+}
+  /*web circles END*/
+
+
+.actlvid {
+    border: 5px solid var(--current-color);
+    min-height: 500px;
+    justify-content: center;
+    padding: 0;
+}
+
+.courseDescription{
+    text-align: center;
+    background-color: var(--current-color);
+    box-shadow: 7px 7px 2px  lightgray;
+}
+
+
+.description {
+    font-size:1.2rem;
+color: #ffffff;
+font-family: PT Sans;
+}
+
+.imgDesc {
+    box-shadow: 7px 7px 2px  lightgray;
+}
+
+/* CODE FOR QUOTE SLIDESHOW, FROM W3SCHOOLS */
+
+/* Slideshow container */
+.slideshow-container {
+    position: relative;
+    background: var(--current-color);
+    z-index: -1;
+    border: 2px solid white;
+  }
+  
+  /* Slides */
+  .mySlides {
+    display: none;
+    padding: 80px;
+    text-align: center;
+    z-index: -1;
+  }
+  
+  /* The dot/bullet/indicator container */
+  .dot-container {
+    text-align: center;
+    padding: 20px;
+    background: var(--current-color);
+    z-index: -1;
+    border: 2px solid white;
+  }
+  
+  /* The dots/bullets/indicators */
+  .dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+    z-index: -1;
+  }
+  
+  /* Add a background color to the active dot/circle */
+  .active, .dot:hover {
+    background-color: white;
+    z-index: -1;
+  }
+  
+  /* Add an italic font style to all quotes */
+  q {
+    font-style: italic;
+    font-family: Kanit;
+    color: black;
+    z-index: -1;
+    font-size: 20px;
+  }
+  
+  /* Add a blue color to the author */
+  .author {
+    color: white; 
+    z-index: -1;
+    font-family: Kanit;
+}
+
+.gallery {
+    background-image: linear-gradient(#EC3963, #BB67A3, #46A9D3);
+    height: auto;
+}
+
+.furtherInfo{
+    text-align: center;
+    background-color: var(--current-color);
+    box-shadow: 7px 7px 2px  lightgray;
+}
+.card{
+    /* box-shadow: 7px 7px 2px  rgb(73, 73, 73); */
+    border: 5px solid white;
+    z-index: 0;
+  
+}
+.btn{
+    background-color: #46A9D3;
+    
+
+}
+.btn:hover{
+    border-color: #46A9D3;
+}
+
+.mount1 {
+    background-color: white;
+    height: 20px;
+    width: 20px;
+    justify-content: center;
+}
+
+.mount2 {
+    background-color: white;
+    height: 10px;
+    width: 100px;
+    justify-content: center;
+}
+
+.website {
+    z-index: 1;
+}
+.teacher{
+    box-shadow: 7px 7px 2px  lightgray;
+}
+
+
+/* Monitor Container */
+.monitor {
+    width: 100%;
+    /* Adjust width as needed */
+    max-width: 500px;
+    /* Maximum size */
+    aspect-ratio: 16 / 10;
+    /* Keeps monitor shape */
+    background: #222;
+    /* Monitor frame color */
+    border-radius: 10px;
+    /* Rounded edges */
+    padding: 10px;
+    position: relative;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* Screen Area */
+.screen {
+    width: 100%;
+    height: 100%;
+    background: black;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.screen img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    /* Ensures the image fills the screen */
+}
+
+/* Monitor Stand */
+.stand {
+    width: 15%;
+    height: 20px;
+    background: #444;
+    border-radius: 5px;
+}
+
+.base {
+    width: 25%;
+    height: 10px;
+    background: #333;
+    border-radius: 5px;
+}
+
+/* Responsive Container */
+.monitor-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+/* Container to keep keyboard and mouse inline */
+.input-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    /* Space between keyboard and mouse */
+    margin-top: 15px;
+}
+
+/* Keyboard Styling */
+.keyboard {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    /* Space between key rows */
+    width: 100%;
+    /* Ensure the keyboard takes full width of monitor */
+    max-width: 300px;
+    /* Set a max width for the keyboard */
+    margin-bottom: 10px;
+    /* Margin between keyboard and mouse */
+}
+
+/* Mouse Styling (Clickable) */
+.mouse {
+    width: 40px;
+    height: 60px;
+    background: #444;
+    border-radius: 50% 50% 60% 60%;
+    border: none;
+    cursor: pointer;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
+    position: relative;
+}
+
+.mouse::before {
+    content: "";
+    width: 5px;
+    height: 15px;
+    background: black;
+    position: absolute;
+    top: 12px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 5px;
+}
+
+.mouse:hover {
+    background: #555;
+}
+
+/* Key Row Styling */
+.key-row {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Individual Key Styling */
+.key {
+    width: 20px;
+    height: 20px;
+    background: #444;
+    color: white;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 10px;
+    cursor: pointer;
+}
+
+.key:hover {
+    background-color: #555;
+}
+
+/* Spacebar Key Styling */
+.spacebar {
+    width: 100%;
+    /* Ensures spacebar is full width */
+    height: 20px;
+    font-size: 10px;
+}
+
+.bg {
+    background-color: var(--current-color);
+}
+
+
+.up{
+    border-color: transparent;
+    background-color: var(--current-color);
+    text-align: center;
+    color: white;
+    margin: 2rem;
+    border-radius: 100%;
+    width: 3rem; /* Adjust as needed */
+    height: 3rem;
+    background-repeat: no-repeat;
+    align-items: center;
+    font-size: 2rem;
+    position: fixed; /* Fixed/sticky position */
+    bottom: 20px; /* Place the button at the bottom of the page */
+    right: 30px; /* Place the button 30px from the right */
+    z-index: 99; /* Make sure it does not overlap */
+    border: 2px solid white;
+ 
+}
+.up:hover{
+    background-color: grey;
+   color: var(--current-color);
+   border: 2px solid white;
+}
+.arrow{
+    color: #ffffff;
+    text-decoration: none;
+}
+.arrow:hover{
+    color: var(--current-color);
+}
+.level{
+    font-family: Kanit;
+    color: var(--current-color);
+}
+/*scrollbar styling (Thank you Mahek) */
+::-webkit-scrollbar {
+    width: 12px; 
+  }
+  
+  ::-webkit-scrollbar-track {
+  background-color: #808080;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background-color: var(--current-color);;
+      
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background-color: var(--current-color);;
+  }
+.randomtest{
+    color:var(--current-color);
+}
+
+#teacherdesc {
+    height: 250px;
+    overflow-y: auto;
+    scrollbar-width: thin;
+    vertical-align: center;
+    text-align: center;
+}

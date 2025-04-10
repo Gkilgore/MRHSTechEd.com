@@ -1,0 +1,169 @@
+body {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #ffefdb;
+    overflow: hidden;
+    font-family: "Raleway", serif;
+}
+
+.container {
+    display: flex;
+    justify-content: center; /* Align children (image and text) horizontally */
+    align-items: center; /* Center children vertically */
+    height: 100vh;
+    opacity: 0; /* Initially hidden */
+    visibility: hidden;
+    animation: dropDown 1s forwards;
+    animation-delay: 8s; /* Delay until the cup has disappeared */
+}
+
+/* loading page coffee*/
+img {
+    max-width: 100%;  /* Ensure the image is responsive */
+    width: 50%; /* Set the image width */
+    margin-right: 15px; /* Space between the image and the text */
+}
+
+
+
+/* New Drop Down Animation */
+@keyframes dropDown {
+    0% {
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+/* Mobile-responsive layout */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column; /* Stack image, text, and button vertically */
+        text-align: center; /* Center text */
+        align-items: center; /* Center contents horizontally */
+    }
+
+    img {
+        margin-right: 0; /* Remove right margin */
+        margin-bottom: 20px; /* Add margin between image and text */
+        width: 80%; /* Make image smaller on mobile */
+    }
+
+    .continue-btn {
+        margin-left: 0; /* Remove left margin */
+        margin-top: 20px; /* Add space above the button */
+    }
+}
+
+
+
+.cup {
+    position: absolute; /* Position it in place */
+    width: 220px;
+    height: 180px;
+    border: 8px solid #ffefdb;
+    box-shadow: 0 0 0 12px #352a22;
+    border-radius: 10px 10px 60px 75px;
+    background: url('img/coffee.png');
+    background-repeat: repeat-x;
+    animation: filling 4s infinite;
+    z-index: 1; /* Keep it above the content */
+}
+
+@keyframes filling {
+    0%, 100% {
+        background-position: 0 130px;
+    }
+    50% {
+        background-position: 600px -70px;
+    }
+}
+
+.cup .cup-handle {
+    position: absolute;
+    top: 10px;
+    right: -74px;
+    width: 65px;
+    height: 120px;
+    border: 12px solid #352a22;
+    border-radius: 20px 10px 50px 20px;
+}
+
+.cup .steam {
+    position: absolute;
+    border-radius: 10px 2px;
+    width: 8px;
+    animation: steaming 2s infinite;
+}
+
+@keyframes steaming {
+    0%, 100% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+        filter: blur(.8px);
+        transform: translateY(-10px);
+    }
+}
+
+.cup .steam:nth-child(1) {
+    top: -70px;
+    left: 65px;
+    height: 30px;
+    background: #8e5a3423;
+    animation-delay: .2s;
+}
+
+.cup .steam:nth-child(2) {
+    top: -120px;
+    left: 95px;
+    height: 50px;
+    background: #8e5a3454;
+    animation-delay: .6s;
+}
+
+.cup .steam:nth-child(3) {
+    top: -90px;
+    left: 125px;
+    height: 40px;
+    background: #8e5a3433;
+    animation-delay: 1s;
+}
+
+@keyframes fadeOut {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+        display: none;
+    }
+}
+
+.hide-after-2-rotations {
+    animation: fadeOut 1s forwards;
+}
+
+/* loading page coffee ending*/
+
+/* Add this new class to control the button's position after the animation */
+
+
+/* coffee cup button start */
+
+.Click{
+    font-size:30px;
+}
+
+img{
+    height: 120%;
+    width:120%;
+}
+
+/* coffee cup button end */

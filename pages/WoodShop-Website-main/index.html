@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>MRHS Woodworking</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <link rel="icon" href="imgs/lab caot.jpg">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+        <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script> <!--VUE-->
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css files/home.css">
+   <style>
+        /* Adjustments for the staggered cards */
+        .staggered-card:nth-child(odd) { /* Odd-numbered cards */
+            margin-left: 10px; /* Default push to the right */
+        }
+
+        .staggered-card:nth-child(even) { /* Even-numbered cards */
+            margin-right: 10px; /* Default push to the left */
+        }
+
+        /* Specific adjustments for each card */
+        .staggered-card:nth-child(1) { /* First card */
+            margin-left: 30px; /* More to the right */
+            margin-right: auto; /* Override any right margin */
+        }
+
+        .staggered-card:nth-child(2) { /* Second card */
+            margin-right: 30px; /* More to the left */
+            margin-left: auto; /* Override any left margin */
+        }
+
+        .staggered-card:nth-child(3) { /* Third card */
+            margin-left: 30px; /* More to the right */
+            margin-right: auto; /* Override any right margin */
+        }
+
+        /* Media query for smaller screens (e.g., tablets) */
+        @media (max-width: 768px) {
+            .staggered-card:nth-child(1) {
+                margin-left: 20px;  /* Smaller adjustment */
+            }
+
+            .staggered-card:nth-child(2) {
+                margin-right: 20px; /* Smaller adjustment */
+            }
+
+            .staggered-card:nth-child(3) {
+                margin-left: 20px;  /* Smaller adjustment */
+            }
+        }
+
+        /* Media query for even smaller screens (e.g., phones) */
+        @media (max-width: 576px) {
+            .staggered-card:nth-child(1) {
+                margin-left: 0; /* Remove adjustment */
+            }
+
+            .staggered-card:nth-child(2) {
+                margin-right: 0; /* Remove adjustment */
+            }
+
+            .staggered-card:nth-child(3) {
+                margin-left: 0; /* Remove adjustment */
+            }
+        }
+   </style>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <div class="navbar">
+	
+        <div class="logo">
+            <h2>WoodShop</h2>
+        </div>
+        
+        
+        <ul class="links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="classes.html">Classes</a></li>
+            <li><a href="About the Teacher.html">Teachers</a></li>
+            <li><a href="Students and Projects.html">students and Projects </a></li>
+            <li><a href="Safety Info.html">Safety Information</a></li>
+            <li><a href="WHS.html">Woodworking Honor Society</a></li>
+        </ul>
+        
+        
+        <div class="right">
+           <a target = "_blank" href="//sites.google.com/view/mrdwoodshop/home?authuser=0"> <button >Dellapietros website</button></a>
+        </div>
+        
+        <div class="toggle">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
+        
+        
+    </div>
+    
+    
+    
+    <main>
+        
+        
+
+    <!-- Hero Section with Slider -->
+    <div id="app">
+        <section class="hero">
+            <video v-if="!isMobile" autoplay loop muted playsinline class="hero-video">
+                <source src="vids/woodshopBRoll.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <img v-else src="imgs/ThorImageForTest.jpg" alt="Woodworking" class="hero-image">
+            <div class="hero-content">
+                <h1 class="drift display-1">Welcome to MRHS Woodworking</h1>
+                <p class="drift display-4">Discover the art of woodworking</p>
+            </div>
+        </section>
+    </div>
+    
+    
+
+    <!-- Staggered Cards Section -->
+    <div class="container py-5 mt-5  bgstyle">
+        <div class="row d-flex flex-column align-items-center">
+            <!-- Card 1: Woodworking Honors Society -->
+            <div class="col-md-6 staggered-card mb-4">
+                <div class="card">
+                    <img src="homeIMG/Firefly -WHS- illustration on wood grain 88870.jpg" class="card-img-top" alt="Woodworking Honors Society">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Woodworking Honors Society</h5>
+                        <p class="card-text">Explore opportunities with the Woodworking Honors Society.</p>
+                        <a href="WHS.html" class="btn btn-primary">Learn More</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 2: About the Teachers -->
+            <div class="col-md-6 staggered-card mb-4 ">
+                <div class="card">
+                    <img src="homeIMG/Firefly -Teachers- written on wood grain round dark log 25664.jpg" class="card-img-top" alt="About the Teachers">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">About the Teachers</h5>
+                        <p class="card-text">Meet our passionate woodworking instructors.</p>
+                        <a href="About the Teacher.html" class="btn btn-primary">Meet Them</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 3: Safety Info -->
+            <div class="col-md-6 staggered-card mb-4">
+                <div class="card">
+                    <img src="homeIMG/Firefly -Safety- written on wood grain round dark log 83573.jpg" class="card-img-top" alt="Safety Info">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Safety Info</h5>
+                        <p class="card-text">Important safety guidelines for woodworking.</p>
+                        <a href="Safety Info.html" class="btn btn-primary">View Guidelines</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>... <!-- Additional Cards Section -->
+    <div class="container mt-3">
+        <div class="row">
+            <!-- Card 1 -->
+            <div class="col-md-4">
+                <div class="card mb-3">
+                    <div class="row g-0">
+                        <div class="col-md-4">
+                            <img src="homeIMG/Firefly -Classes- written on wood grain round dark log firey 14851.jpg" class="img-fluid rounded-start" alt="...">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <h5 class="card-title">Classes</h5>
+                                <p class="card-text">Explore our woodworking classes.</p>
+                                <a href="classes.html" class="btn btn-secondary">Explore</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="col-md-4">
+                <div class="card mb-3">
+                    <div class="row g-0">
+                        <div class="col-md-4">
+                            <img src="homeIMG/Firefly -Projects- written on wood grain round dark log firey 14851.jpg" class="img-fluid rounded-start" alt="...">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <h5 class="card-title">Projects</h5>
+                                <p class="card-text">See student creations and projects.</p>
+                                <a href="Students and Projects.html" class="btn btn-secondary">View Projects</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="col-md-4">
+                <div class="card mb-3">
+                    <div class="row g-0">
+                        <div class="col-md-4">
+                            <img src="homeIMG/Firefly -WoodShop- written on wood grain round dark log firey 60397.jpg" class="img-fluid rounded-start" alt="...">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <h5 class="card-title">Mr.D's WoodShop</h5>
+                                <p class="card-text">Learn More on Mr.D's Website.</p>
+                                <a href="https://sites.google.com/view/mrdwoodshop/home?authuser=0" class="btn btn-secondary">Learn More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 MRHS Woodworking. All rights reserved.</p>
+        </div>
+    </footer>
+    <script src="js files/home.js"></script>
+    <!-- Bootstrap JavaScript Libraries -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+        integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

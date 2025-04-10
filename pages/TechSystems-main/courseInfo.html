@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Course Info</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS v5.2.1 -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <link href="style.css" rel="stylesheet" />
+
+    <!--font 1-->
+    <link rel="stylesheet" href="https://use.typekit.net/mbl4cuo.css">
+
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+  </head>
+
+  <body>
+
+
+  <!--nav-->
+
+<nav class="navbar sticky-top">
+  <form class="container-fluid justify-content-start">
+    <button
+      class="btn"
+      type="button"
+      data-bs-toggle="offcanvas"
+      data-bs-target="#offcanvasWithBothOptions"
+      aria-controls="offcanvasWithBothOptions"
+    >
+    <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div
+      class=" sideNav offcanvas offcanvas-start"
+      data-bs-scroll="true"
+      tabindex="-1"
+      id="offcanvasWithBothOptions"
+      aria-labelledby="offcanvasWithBothOptionsLabel"
+    >
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel">
+          <a class= "textdecor" href ="index.html" >Tech Systems</a>
+        </h5>
+        <button
+          type="button"
+          class="btn-close"
+          data-bs-dismiss="offcanvas"
+          aria-label="Close"
+        ></button>
+      </div>
+      <div class="offcanvas-body">
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                
+                <a class="elementHover nav-link " aria-current="page" href="index.html">Home</a>
+
+            </li>
+          
+            <li class="nav-item">
+              <a class="nav-link" href="#crsInfo">Course Info</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#map">Map</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#tools">Tools</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Class Resources
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="https://www.onshape.com/en/">Onshape- 3D Modeling </a></li>
+                <li><a class="dropdown-item" href="https://docs.google.com/document/d/10NQTedFp3ROgutnxvsWjZDGviVTkht9ktxopsVfX42M/edit?tab=t.0#heading=h.gjdgxs"> Course Book </a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="gallery.html">Gallery</a>
+            </li>
+          </ul>
+      </div>
+    </div>
+  </form>
+</nav>
+
+<!--nav end-->
+
+
+    <div class="container">
+
+      <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+
+      <div class="row text-center mb-5">
+        <h1 class ="heading">Tech Systems</h1>
+      </div>
+
+
+      <div class="row techvideos mb-5 rounded-5 ">
+        <div class="col-6 ">
+            <video autoplay muted loop class="video-fluid">
+                <source src="IMG_6769.MOV" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+    
+        <div class="col-6">
+            <video autoplay muted loop class="video-fluid">
+                <source src="Rube Goldberg Machine Project (Feb 19, 2025 at 9_05 AM).mov" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+    </div>
+
+      <!--about her section-->
+
+
+      <div class="row textColor justify-content-center center"  id="abtHer">
+       
+        <div class="col-md-4 ">
+          <img class="img-fluid rounded border " src="imgs/RussoFillerImg.JPG" alt="Portrait photo of Mrs. Russo" class="col-md-6"/>
+        </div>
+        <div class="col-md-6">
+          <div class="container text-center " id="abHerText">
+            <h1 class="text-center ">Ms. Russo</h1>
+          
+          
+            <p class="text-center">
+              This is my 3rd year teaching at Marlboro High School. I have taught many classes in the B-Wing, including Engineering Graphics 1 and 2, Electronics 1 and 2, Graphic Design 1 and 2, and Technological Systems and Design. 
+Before teaching at Marlboro, I attended Howell High School and then studied Technology and Engineering Education at The College of New Jersey.
+
+
+            </p>
+            <p>Email: Drusso@frhsd.com</p>
+          </div>
+        </div>
+      </div>
+      <!--end of about her section-->
+
+      <!--class info and resources section-->
+      <div class="marg">
+
+      <div class="row mt-5 " id ="crsInfo">
+        <h2 class="clsinfo">Class Info & Resources</h2>
+      </div>
+
+      
+      <!--dropdowns-->
+      <div class=" m-3 accordion mb-5" id="accordionExample">
+        <div class="accordion-item ">
+          <h2 class="accordion-header bgcolor">
+            <button class="accordion-button collapsed bgcolor" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+              Course Book and outline
+            </button>
+          </h2>
+          <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              5 Credits, Grades 9-12
+              This course provides an overview of technology's impact on society, including its historical context, current effects, and potential future developments. Unit 1 of Technological Systems and Design provides an overview of technology's impact on society, including its historical context, current effects, and potential future developments. Unit 2: Design and Reverse Engineering explores the process of design and reverse engineering. Unit 3’s Technical Literacy covers the fundamentals of sketching and technical drawing. During Unit 4 Structures, students will be introduced to different types of forces and structural members.  Unit 5: Mechanisms introduces and experiments with various mechanical forces, materials and mechanisms. During Unit 6 Power and Energy,  students will learn about and experiment with various forms of mechanical, electrical and fluid energy forms.  Finally, in Unit 7 students will demonstrate that they can apply the design/ engineering process in a practical and/ or theoretical situation in "capstone-like" projects.
+              
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed bgcolor" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+              Class Structure
+            </button>
+          </h2>
+          <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              The class is project based, each unit has a major project associated with it. Utilizes hands on skills and techniques to achieve the goal for each project.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed bgcolor" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+              Future Relevance
+            </button>
+          </h2>
+          <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              Tech Systems is essential for preparing students for a digital-driven workforce, equipping them with critical skills . As technology continues to evolve, early exposure will foster innovation and problem-solving abilities, ensuring students remain competitive in an increasingly automated world. Additionally, integrating tech education will bridge the digital divide.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+      <!--dropdowns end-->
+
+      <!--end of class info and resources section-->
+
+
+
+      <!--Add map here-->
+      
+<div class="row mt-5 justify-content-center map" id="map">
+
+  <div class="row mapimg  area circle-container">
+ 		
+   <a href="#3d" >
+    <h1>
+      <div class="circle1 glow-effect ">
+        <div class="text-overlay">3D Printer</div>
+      </div>
+    </h1>
+  </a>
+    
+  <a href ="#CNC">
+    <h1>
+      <div class="circle2 glow-effect2 ">
+        <div class="text-overlay">CNC</div>
+      </div>
+    </h1>
+  </a>
+
+  <a href="#hotglue">
+  <h1>
+      <div class="circle3 glow-effect3 ">
+        <div class="text-overlay">Hot Glue</div>
+      </div>
+    </h1>
+  </a>  
+
+<a href ="#drill">
+    <h1>
+      <div class="circle4 glow-effect4 ">
+        <div class="text-overlay">Drill</div>
+      </div>
+    </h1>
+  </a>
+    
+  <h6 class="text-center chkdots">Check Out the blue dots </h6>
+
+
+
+  </div>
+
+</div>
+
+
+      <!--tool section-->
+      
+      <div class="row" id="tools">
+        <!--tool1-->
+        <div class="col-6 col-lg-4 p-3 mb-2 mt-md-5" id ="hotglue">
+          <div class="card cardbg shadow">
+            <img src="imgs/IMG_0102.jpg" class="card-img-top" alt="Picture of a hot glue gun">
+            <div class="card-body text-center">
+              <h5 class="card-title">Hot Glue Gun</h5>
+              <p class="card-text">A hot glue gun is a handheld tool that melts solid glue sticks to create a strong, quick-setting adhesive bond for various materials. It's commonly used in crafts, home repairs, and DIY projects for its ease of use and versatility.</p>
+              <a href="https://www.loctite-consumer.com.au/ideas/repair-diy-projects/hot-glue-gun-facts-and-pointers.html#:~:text=Hot%20glue%20guns%3A%20an%20overview,-Hot%20glue%20guns&text=The%20concept%20is%20simple%3A%20a,quickly%20for%20a%20durable%20bond." target="_blank" class="btn border border-3">More Info</a>
+            </div>
+          </div>
+        </div>
+        <!--tool1 end-->
+        <!--tool2-->
+        <div class="col-6 col-lg-4 p-3 mb-2 mt-md-5 " id ="CNC">
+          <div class="card cardbg shadow">
+            <img src="imgs/IMG_0094.JPG" class="card-img-top" alt="Picture of a CNC router">
+            <div class="card-body text-center">
+              <h5 class="card-title">CNC Router</h5>
+              <p class="card-text">A CNC router is a computer-controlled machine used to carve, cut, and shape materials like wood, plastic, and metal with high precision. It’s commonly used in manufacturing, woodworking, and prototyping for intricate designs and detailed work.</p>
+              <a href="https://en.wikipedia.org/wiki/CNC_router" target="_blank" class="btn border border-3">More Info</a>
+            </div>
+          </div>
+        </div>
+        <!--tool2 end-->
+        <!--tool3-->
+        <div class="col-6 col-lg-4 p-3 mb-2 mt-md-5" >
+          <div class="card cardbg shadow">
+            <img src="imgs/IMG_0104.JPG" class="card-img-top" alt="Picture of two x-acto knives">
+            <div class="card-body text-center">
+              <h5 class="card-title">X-acto Knife</h5>
+              <p class="card-text">An X-Acto knife is a precision cutting tool with a sharp, replaceable blade, ideal for detailed and clean cuts on materials like paper, plastic, and foam. It’s commonly used in crafting, model making, and other tasks requiring fine, controlled cuts.</p>
+              <a href="https://thequiltshow.com/quiltipedia/what-is-an-exacto-knife#:~:text=An%20X%2DACTO%20knife%20is,with%20a%20very%20sharp%20point." target="_blank" class="btn border border-3">More Info</a>
+            </div>
+          </div>
+        </div>
+        <!--tool3 end-->
+        <!--tool4-->
+        <div class="col-6 col-lg-4 p-3 mb-2 mt-md-5" id ="3d">
+          <div class="card cardbg shadow">
+            <img src="imgs/IMG_0093.JPG" class="card-img-top" alt="Picture of a 3-D printer">
+            <div class="card-body text-center">
+              <h5 class="card-title">3-D Printer</h5>
+              <p class="card-text">A 3D printer is a machine that creates three-dimensional objects by layering material based on a digital design. It's widely used in prototyping, manufacturing, and creative projects for its ability to produce custom, complex shapes.</p>
+              <a href="https://builtin.com/3d-printing" target="_blank" class="btn border border-3">More Info</a>
+            </div>
+          </div>
+        </div>
+        <!--tool4 end-->
+        <!--tool5-->
+        <div class="col-6 col-lg-4 p-3 mt-mb-2" id ="drill">
+          <div class="card cardbg shadow">
+            <img src="imgs/IMG_0099.JPG" class="card-img-top" alt="Picture of a drill press">
+            <div class="card-body   text-center">
+              <h5 class="card-title">Drill Press</h5>
+              <p class="card-text">A drill press is a stationary power tool that uses a rotating drill bit to create precise holes in materials like wood, metal, and plastic. It offers greater accuracy and control compared to handheld drills, making it ideal for detailed and repetitive tasks.</p>
+              <a href="https://www.osha.gov/etools/woodworking/production/machines-tools/drill-press#:~:text=A%20drill%20press%20is%20a,multiple%20spindles%20for%20gang%20drilling." target="_blank" class="btn border border-3">More Info</a>
+            </div>
+          </div>
+        </div>
+        <!--tool5 end-->
+        <!--tool6-->
+        <div class="col-6 col-lg-4 p-3 mb-2">
+          <div class="card cardbg shadow">
+            <img src="imgs/IMG_0107.JPG" class="card-img-top" alt="Picture of a miter cutter">
+            <div class="card-body text-center">
+              <h5 class="card-title">Miter Cutter</h5>
+              <p class="card-text">A miter cutter is a tool used to make angled cuts, typically in wood or molding, with precision. It’s commonly used in woodworking for creating joints like those in frames, baseboards, and crown molding.</p>
+              <a href="https://www.highlandwoodworking.com/woodworking-tips-1901jan/miter-trimmer-woodworking-tool-review.html#:~:text=The%20Miter%20Trimmer%20shaves%20the,with%20two%20razor%20sharp%20blades." target="_blank" class="btn border border-3">More Info</a>
+            </div>
+          </div>
+        </div>
+        <!--tool6 end-->
+      </div>
+      
+      <!--tool section end-->
+
+      <main></main>
+    </div>
+    <footer>
+      <p>&copy; 2025 Tech Systems Class. All rights reserved.</p>
+  </footer>
+    <!-- Bootstrap JavaScript Libraries -->
+
+    <script>
+      // Get the button
+      let mybutton = document.getElementById("myBtn");
+      
+      // When the user scrolls down 20px from the top of the document, show the button
+      window.onscroll = function() {scrollFunction()};
+      
+      function scrollFunction() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+          mybutton.style.display = "block";
+        } else {
+          mybutton.style.display = "none";
+        }
+      }
+      
+      // When the user clicks on the button, scroll to the top of the document
+      function topFunction() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+      }
+      </script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+      crossorigin="anonymous"
+    ></script>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+      integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+      crossorigin="anonymous"
+    ></script>
+    <script src="script.js"></script>
+  </body>
+</html>
