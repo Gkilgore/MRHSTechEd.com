@@ -1,26 +1,28 @@
-/*
-colors:
+/* ============================================
+   SITE VARIABLES / COLOR PALETTE / TYPOGRAPHY
+===============================================
 
-    blue: 113F75
-    yellow: F4E04D
+Colors:
+    Blue:  #113F75
+    Yellow: #F4E04D
 
-fonts:
+Fonts:
+    Buttons:          "Madimi One", serif;
+    Long blurbs:      "KoHo", serif;
+    Titles above blurbs: "Kaisei Decol", serif;
+    Big titles/navbar:   "Fira Sans Condensed", serif;
 
-    for the buttons:  font-family: "Madimi One", serif;
-    for long-blurbs:   font-family: "KoHo", serif;
-    for titles above blurbs:   font-family: "Kaisei Decol", serif;
-    big titles/navbar:  font-family: "Fira Sans Condensed", serif;
-
-screen sizes:
-
-    small: 576px
-    medium: 768px
-    large: 992px
-    extra large: 1200px
-    extra extra large: 1400px
+Screen Sizes:
+    Small:             576px
+    Medium:            768px
+    Large:             992px
+    Extra Large:       1200px
+    Extra Extra Large: 1400px
 */
 
-/* navbar css */
+/* ========================
+   NAVBAR STYLES
+======================== */
 
 .navbar {
     background-color: #113F75;
@@ -49,7 +51,9 @@ screen sizes:
     text-decoration: underline;
 }
 
-/*hamburger menu css*/
+/* ========================
+   HAMBURGER MENU STYLES
+======================== */
 
 .navbar-toggler {
     width: 40px;
@@ -124,7 +128,9 @@ screen sizes:
     padding: 20px;
 }
 
-/* index header css */
+/* ========================
+   INDEX HEADER STYLES
+======================== */
 
 .index-header-row {
     height: 92.5vh;
@@ -155,7 +161,10 @@ screen sizes:
     font-size: clamp(35px, 1.5vw, 45px);
 }
 
-/* info css */
+
+/* ========================
+   INFO SECTION STYLES
+======================== */
 
 .info-row {
     margin: 300px 0;
@@ -171,7 +180,9 @@ screen sizes:
     z-index: 1;
 }
 
-.what-text {
+.what-text,
+.offer-text,
+.staff-text {
     height: clamp(400px, 30vw, 500px);
     width: clamp(350px, 45vw, 500px);
     background: #113F75;
@@ -193,18 +204,6 @@ screen sizes:
     z-index: 1;
 }
 
-.offer-text {
-    height: clamp(400px, 30vw, 500px);
-    width: clamp(350px, 45vw, 500px);
-    background: #113F75;
-    border: #F4E04D 5px solid;
-    border-radius: 6px;
-    color: black;
-    z-index: 2;
-    margin: -100px;
-    box-shadow: black 0px 2px 4px 0px, rgb(64, 64, 64) 0px 2px 16px 0px;
-}
-
 .staff-image {
     height: 400px;
     width: clamp(600px, 70vw, 900px);
@@ -213,18 +212,6 @@ screen sizes:
     background-size: cover;
     background-position: center center;
     z-index: 1;
-}
-
-.staff-text {
-    height: clamp(400px, 30vw, 500px);
-    width: clamp(350px, 45vw, 500px);
-    background: #113F75;
-    border: #F4E04D 5px solid;
-    border-radius: 6px;
-    color: black;
-    z-index: 2;
-    margin: -100px;
-    box-shadow: black 0px 2px 4px 0px, rgb(64, 64, 64) 0px 2px 16px 0px;
 }
 
 .info-title {
@@ -242,7 +229,9 @@ screen sizes:
     font-family: "KoHo", serif;
 }
 
-/* room css */
+/* ========================
+   ROOM / CLASSROOM STYLES
+======================== */
 
 .classroom-header-row {
     height: 92.50vh;
@@ -318,7 +307,9 @@ screen sizes:
     font-family: "Kaisei Decol", serif;
 }
 
-/* carousel css */
+/* ========================
+   CAROUSEL STYLES
+======================== */
 
 .carousel {
     border: solid 5px #F4E04D;
@@ -379,7 +370,9 @@ screen sizes:
     transition: 0.35s;
 }
 
-/* courses page css */
+/* ========================
+   COURSES PAGE STYLES
+======================== */
 
 .course-header-row {
     height: 97.5vh;
@@ -409,12 +402,7 @@ screen sizes:
     border-radius: 6px;
 }
 
-.course-btn {
-    width: 300px;
-    height: 150px;
-    font-size: clamp(20px, 4vw, 33px);
-}
-
+.course-btn,
 .club-btn {
     width: 300px;
     height: 150px;
@@ -460,7 +448,6 @@ screen sizes:
 
 .course-requirements {
     color: #F4E04D;
-
 }
 
 .bulletwords {
@@ -480,13 +467,9 @@ screen sizes:
     top: 10px;
 }
 
-/* or the buttons:  font-family: "Madimi One", serif;
-    for long-blurbs:   font-family: "KoHo", serif;
-    for titles above blurbs:   font-family: "Kaisei Decol", serif;
-    big titles/navbar:  font-family: "Fira Sans Condensed", serif;*/
-
-
-/* staff page css */
+/* ========================
+   STAFF PAGE STYLES
+======================== */
 
 .staff-header-row {
     height: 92.5vh;
@@ -517,7 +500,6 @@ screen sizes:
     position: relative;
     bottom: 70px;
     box-shadow: black 0px 2px 4px 0px, rgb(64, 64, 64) 0px 2px 16px 0px;
-
 }
 
 .staff-hover-section-text {
@@ -601,24 +583,9 @@ screen sizes:
     text-decoration: underline;
 }
 
-.teacher-andre-years {
-    font-family: "KoHo", serif;
-    font-size: 20px;
-    font-weight: 800;
-}
-
-.teacher-andre-fun {
-    font-family: "KoHo", serif;
-    font-size: 20px;
-    font-weight: 800;
-}
-
-.teacher-fun {
-    font-family: "KoHo", serif;
-    font-size: 16px;
-    font-weight: 800;
-}
-
+.teacher-andre-years,
+.teacher-andre-fun,
+.teacher-fun,
 .teacher-years {
     font-family: "KoHo", serif;
     font-size: 16px;
@@ -631,9 +598,9 @@ screen sizes:
     list-style-type: none;
 }
 
-
-
-/* btn css */
+/* ========================
+   BUTTON STYLES
+======================== */
 
 .btn {
     background-color: #F4E04D;
@@ -656,7 +623,9 @@ screen sizes:
     border: none;
 }
 
-/* back to top css*/
+/* ========================
+   BACK TO TOP BUTTON
+======================== */
 
 #myBtn {
     display: none;
@@ -687,7 +656,9 @@ screen sizes:
     box-shadow: none;
 }
 
-/* footer css */
+/* ========================
+   FOOTER STYLES
+======================== */
 
 footer {
     background-color: #113F75;
@@ -708,7 +679,6 @@ footer {
     margin: 0;
     font-size: clamp(40px, 4vw, 150px);
 }
-
 
 .website,
 .place,
@@ -733,10 +703,12 @@ footer {
     height: 150px;
 }
 
-/* media for different screen sizes */
 
-/* large width */
+/* ========================
+   MEDIA QUERIES
+======================== */
 
+/* Large screens (≥992px) */
 @media (min-width: 992px) {
     .what-image {
         height: 600px !important;
@@ -801,31 +773,28 @@ footer {
     .course-image {
         height: 300px;
     }
-
 }
 
-/* scrollbar */
+/* ========================
+   CUSTOM SCROLLBAR STYLES
+======================== */
 
-/* width */
-
+/* Width */
 ::-webkit-scrollbar {
     width: 15px;
 }
 
 /* Track */
-
 ::-webkit-scrollbar-track {
     background: #dddcdc;
 }
 
 /* Handle */
-
 ::-webkit-scrollbar-thumb {
     background: #F4E04D;
 }
 
 /* Handle on hover */
-
 ::-webkit-scrollbar-thumb:hover {
     background: #a7982b;
 }

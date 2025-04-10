@@ -1,0 +1,591 @@
+<!-- Document type declaration for HTML5 -->
+<!doctype html>
+<!-- Opening HTML tag with language set to English -->
+<html lang="en">
+
+<!-- Begin head section containing meta, title, and links to stylesheets and scripts -->
+
+<head>
+    <!-- Sets the title of the webpage -->
+    <title>Ensembles - MHS Music</title>
+    <!-- Required meta tags -->
+    <!-- Specifies the character encoding for the document -->
+    <meta charset="utf-8" />
+    <!-- Sets the viewport to make the website responsive on all devices -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <!-- Link to the favicon image -->
+    <link rel="icon" href="imgs/logo.png">
+    <!-- Link to the Font Awesome stylesheet for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <!-- Link to the custom stylesheet -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Import Vue.js -->
+    <script src="https://unpkg.com/vue@3.0.11/dist/vue.global.js"></script>
+    <!-- Bootstrap CSS v5.2.1 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+</head>
+
+<!-- Begin body section of the document -->
+
+<body>
+    <!-- Header section containing the navigation bar -->
+    <header>
+        <!-- Navigation bar with Bootstrap classes -->
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid d-flex justify-content-between align-items-center">
+                <!-- Logo and link to home page -->
+                <a class="navbar-brand" href="index.html"><img src="imgs/logo.png" width="50" height="48"
+                        class="d-inline-block align-text-top rotate-center" alt="Marlboro High School Music logo"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <!-- Navigation links -->
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto text-end">
+                        <li class="nav-item me-lg-3">
+                            <a class="nav-link" aria-current="page" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item me-lg-3">
+                            <a class="nav-link" href="calendar.html">Calender</a>
+                        </li>
+                            <!-- Dropdown navigation item for Ensembles -->
+                        <li class="nav-item dropdown me-lg-3">
+                            <a class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Ensembles
+                            </a>
+                            <!-- Dropdown menu for ensemble links - no bugs here just features :) -->
+                            <ul class="dropdown-menu position-absolute">
+                                <!-- Dropdown item for Concert Band with on-click scroll action -->
+                                <li><a class="dropdown-item"
+                                        onclick="document.getElementById('concert_band').scrollIntoView();">Concert
+                                        Band</a></li>
+                                <!-- Dropdown item for Concert Orchestra with on-click scroll action -->
+                                <li><a class="dropdown-item"
+                                        onclick="document.getElementById('concert_orchestra').scrollIntoView();">Concert
+                                        Orchestra</a></li>
+                                <!-- Dropdown item for Choir with on-click scroll action -->
+                                <li><a class="dropdown-item"
+                                        onclick="document.getElementById('concert_choir').scrollIntoView();">Choir</a>
+                                </li>
+                                <!-- Dropdown item for Pop Music with on-click scroll action -->
+                                <li><a class="dropdown-item"
+                                        onclick="document.getElementById('pop_music').scrollIntoView();">Pop Music</a>
+                                </li>
+                                <!-- Dropdown item for Marching Band with on-click scroll action -->
+                                <li><a class="dropdown-item"
+                                        onclick="document.getElementById('marching_band').scrollIntoView();">Marching
+                                        Band</a></li>
+                                <!-- Dropdown item for Wind Ensemble (hidden by default) with on-click scroll action -->
+                                <li class="d-none"><a class="dropdown-item"
+                                        onclick="document.getElementById('wind_ensemble').scrollIntoView();">Wind
+                                        Ensemble</a></li>
+                                <!-- Dropdown item for Jazz Band with on-click scroll action -->
+                                <li><a class="dropdown-item"
+                                        onclick="document.getElementById('jazz_band').scrollIntoView();">Jazz Band</a>
+                                </li>
+                                <!-- Dropdown item for Pit Orchestra with on-click scroll action -->
+                                <li><a class="dropdown-item"
+                                        onclick="document.getElementById('pit_orchestra').scrollIntoView();">Pit
+                                        Orchestra</a></li>
+                                <!-- Dropdown item for Chamber Ensembles with on-click scroll action -->
+                                <li><a class="dropdown-item"
+                                        onclick="document.getElementById('chamber_ensembles').scrollIntoView();">Chamber
+                                        Ensembles</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="boosters.html">Music Boosters</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- Button to scroll to the top of the page when clicked -->
+    <button onclick="topFunction()" id="topBtn" title="Go to top">Top</button>
+    <!-- Main content section -->
+    <main>
+        <!-- Fluid container for the main content -->
+        <div class="container-fluid">
+            <!-- Row for the main banner -->
+            <div class="row">
+                <!-- Full-width column containing the ensemble main banner with centered text -->
+                <div class="col-12 ensemble-main-banner text-center">
+                    <!-- Main heading with a line break -->
+                    <h1>Take A Look At Our<br>Classes & Ensembles</h1>
+                    <!-- Subheading listing the ensembles in emphasized text -->
+                    <h3><em>Concert Band, Orchestra, Choir, Pop Music, Marching Band, Jazz Band, Pit Orchestra, Chamber
+                            Ensembles</em></h3>
+                </div>
+            </div>
+            <!-- Vue.js app container for search functionality with padding -->
+            <div id="vue_app" class="row text-center pt-5 pb-4">
+                <!-- Empty column for spacing on medium and larger screens -->
+                <div class="d-none d-md-block col-4"></div>
+                <!-- Column containing the search input field with vertical centering -->
+                <div class="col-12 col-md-4 vertical-center">
+                    <!-- Instructional heading for the search feature -->
+                    <h2>Looking for a specific ensemble? Search below:</h2>
+                    <!-- Label acting as a container for the search input -->
+                    <label class="input w-100">
+                        <!-- Text input field bound to Vue.js model with placeholder and event listener -->
+                        <input class="input__field" type="text" placeholder=" " v-model="searchTerm"
+                            v-on:input="search()" />
+                        <!-- Floating label for the input field -->
+                        <span class="input__label">Search</span>
+                    </label>
+                </div>
+                <!-- Empty column for spacing on medium and larger screens -->
+                <div class="d-none d-md-block col-4"></div>
+                <!-- Empty column for spacing in small screens -->
+                <div class="col-1 col-md-4"></div>
+                <!-- Column containing the checkbox for filtering Classes -->
+                <div class="col-5 col-md-2">
+                    <!-- Container for the first checkbox -->
+                    <div class="form-check">
+                        <!-- Checkbox input that toggles the 'filterClass' variable and resets 'filterExtras' -->
+                        <input class="form-check-input" type="checkbox" id="cbx1"
+                            v-on:input="filterClass = !filterClass; filterExtras = false; checkcbxs()">
+                        <!-- Label for the first checkbox (styled as a custom checkbox) -->
+                        <label class="form-check-label" for="cbx1" class="cbx"></label><br>
+                        <!-- Text label for the first checkbox -->
+                        <label class="lbl" for="cbx1">Classes</label>
+                    </div>
+                </div>
+                <!-- Column containing the checkbox for filtering Extracurriculars -->
+                <div class="col-5 col-md-2">
+                    <!-- Container for the second checkbox -->
+                    <div class="form-check">
+                        <!-- Checkbox input that toggles the 'filterExtras' variable and resets 'filterClass' -->
+                        <input class="form-check-input" type="checkbox" id="cbx2"
+                            v-on:input="filterExtras = !filterExtras; filterClass = false; checkcbxs()">
+                        <!-- Label for the second checkbox (styled as a custom checkbox) -->
+                        <label class="form-check-label" for="cbx2" class="cbx"></label><br>
+                        <!-- Text label for the second checkbox -->
+                        <label class="lbl" for="cbx2">Extracuriculars</label>
+                    </div>
+                </div>
+                <!-- Empty column for spacing in small screens -->
+                <div class="col-1 col-md-4"></div>
+            </div>
+            <!-- Section for the Concert Band ensemble -->
+            <div class="row ensembles pb-2 pb-lg-5 inClass" id="concert_band">
+                <!-- Banner for Concert Band on medium and larger screens -->
+                <div class="col-12 d-none d-md-flex ensemble-banners mb-2 mb-lg-5" id="conc-band-bannner">
+                    <div class="corner-borders">
+                        <h1>CONCERT BAND</h1>
+                    </div>
+                </div>
+                <!-- Banner for Concert Band on small screens -->
+                <div class="col-12 d-md-none ensemble-mobile-banners mb-2 mb-lg-5" id="conc-band-mobile-bannner">
+                    <div class="corner-borders">
+                        <h1>CONCERT BAND</h1>
+                    </div>
+                </div>
+                <!-- Empty column for spacing on large screens -->
+                <div class="col-2 d-none d-lg-block"></div>
+                <!-- Column containing the primary Concert Band image with responsive classes -->
+                <div class="col-6 col-lg-2 ps-2 ps-lg-0 pe-1 pe-lg-0 vertical-center"><img
+                        class="img-fluid w-100 rounded" src="imgs/conc-1.jpg"
+                        alt="Yearbook photo of the concert band + orchestra"></div>
+                <!-- Alternate Concert Band image for small screens -->
+                <div class="d-lg-none col-6 pe-2 ps-1"><img class="img-fluid w-100 rounded" src="imgs/band-2.jpg"
+                        alt="A section of the Concert Band during a performance">
+                </div>
+                <!-- Column containing the descriptive text for Concert Band -->
+                <div class="col-12 col-lg-4 vertical-center text-center px-4">
+                    <h5 class="mt-2 mt-lg-0">This ensemble is comprised of all band instrumentalists. Like the Concert
+                        Orchestra, this group has a section class as an elective in which students receive credit for in
+                        the category of Visual and Performing Arts. The course is offered in all four years of a
+                        student’s enrollment at Marlboro High School. Students can receive honors credit starting on
+                        their second year taking the course if they meet the requirements. The Concert Band performs at
+                        numerous school and community events like the 9/11 ceremony, National Honor Society Induction
+                        Ceremony, Graduation and more. The ensemble performs at three major concert performances
+                        throughout the year, a winter concert, March Music in Our Schools Concert, and spring concert.
+                        The ensemble rehearses after school once a week and performs with the Concert Orchestra for
+                        combined selections. This ensemble is open to any band student regardless of experience level.
+                        This is the core band ensemble that students must perform in to participate in any other
+                        extracurricular ensemble such as Jazz Band, Wind Ensemble, Pit Orchestra and Marching Band.</h5>
+                </div>
+                <!-- Additional Concert Band image for large screens -->
+                <div class="d-none d-lg-flex col-4 col-lg-2 ps-1 ps-lg-0 pe-2 pe-lg-0 vertical-center"><img
+                        class="img-fluid w-100 rounded" src="imgs/band-2.jpg"
+                        alt="A section of the Concert Band during a performance"></div>
+            </div>
+            <!-- Section for the Concert Orchestra ensemble -->
+            <div class="row ensembles pb-2 pb-lg-5 inClass" id="concert_orchestra">
+                <!-- Banner for Concert Orchestra on medium and larger screens -->
+                <div class="col-12 d-none d-md-flex ensemble-banners mb-2 mb-lg-5" id="conc-chorus-bannner">
+                    <div class="corner-borders">
+                        <h1>CONCERT ORCHESTRA</h1>
+                    </div>
+                </div>
+                <!-- Banner for Concert Orchestra on small screens -->
+                <div class="col-12 d-md-none ensemble-mobile-banners mb-2 mb-lg-5" id="conc-chorus-mobile-bannner">
+                    <div class="corner-borders">
+                        <h1>CONCERT ORCHESTRA</h1>
+                    </div>
+                </div>
+                <!-- Empty column for spacing on large screens -->
+                <div class="col-2 d-none d-lg-block"></div>
+                <!-- Column containing the primary Concert Orchestra image -->
+                <div class="col-6 col-lg-2 ps-2 ps-lg-0 pe-1 pe-lg-0 vertical-center"><img
+                        class="img-fluid w-100 rounded" src="imgs/orch-1.jpg"
+                        alt="A section of the Concert Orchestra during a performance"></div>
+                <!-- Alternate Concert Orchestra image for small screens -->
+                <div class="d-lg-none col-6 pe-2 ps-1"><img class="img-fluid w-100 rounded" src="imgs/orch-2.jpg"
+                        alt="Yearbook photo of the concert band + orchestra">
+                </div>
+                <!-- Column containing the descriptive text for Concert Orchestra -->
+                <div class="col-12 col-lg-4 vertical-center text-center px-4">
+                    <h5 class="mt-2 mt-lg-0">This ensemble is comprised of string instrumentalists such as violin,
+                        viola, cello and bass. Like the Concert Band, this group has a section class as an elective in
+                        which students receive credit for in the category of Visual and Performing Arts. The course is
+                        offered in all four years of a student’s enrollment at Marlboro High School. Students can
+                        receive honors credit starting on their second year taking the course if they meet the
+                        requirements. The Concert Orchestra performs at numerous school and community events like the
+                        9/11 ceremony, National Honor Society Induction Ceremony, Graduation and more. The ensemble
+                        performs at three major concert performances throughout the year, a winter concert, March Music
+                        in Our Schools Concert, and spring concert. The ensemble rehearses after school once a week and
+                        performs with the Concert Band for combined selections. This ensemble is open to any string
+                        orchestral player regardless of experience level. This is the core orchestral ensemble that
+                        students must perform in to participate in any other extracurricular ensemble such as Jazz Band,
+                        Chamber Strings, Pit Orchestra and Marching Band.</h5>
+                </div>
+                <!-- Additional Concert Orchestra image for large screens -->
+                <div class="d-none d-lg-flex col-4 col-lg-2 ps-1 ps-lg-0 pe-2 pe-lg-0 vertical-center"><img
+                        class="img-fluid w-100 rounded" src="imgs/orch-2.jpg"
+                        alt="Yearbook photo of the concert band + orchestra"></div>
+            </div>
+            <!-- Section for the Concert Choir ensemble -->
+            <div class="row ensembles pb-2 pb-lg-5 inClass" id="concert_choir">
+                <!-- Banner for Concert Choir on medium and larger screens -->
+                <div class="col-12 d-none d-md-flex ensemble-banners mb-2 mb-lg-5" id="conc-choir-banner">
+                    <div class="corner-borders">
+                        <h1>CONCERT CHOIR</h1>
+                    </div>
+                </div>
+                <!-- Banner for Concert Choir on small screens -->
+                <div class="col-12 d-md-none ensemble-mobile-banners mb-2 mb-lg-5" id="conc-choir-mobile-banner">
+                    <div class="corner-borders">
+                        <h1>CONCERT CHOIR</h1>
+                    </div>
+                </div>
+                <!-- Empty column for spacing on large screens -->
+                <div class="col-2 d-none d-lg-block"></div>
+                <!-- Column containing the primary Concert Choir image -->
+                <div class="col-6 col-md-4 col-lg-2 ps-2 ps-lg-0 pe-1 pe-lg-0 vertical-center"><img
+                        class="img-fluid w-100 rounded" src="imgs/chorus-1.jpg"
+                        alt="Yearbook photo of the concert chpir"></div>
+                <!-- Alternate Concert Choir image for small screens -->
+                <div class="d-md-none col-6 pe-2 ps-1"><img class="img-fluid w-100 rounded" src="imgs/chorus-2.jpg"
+                        alt="Concert choir performing">
+                </div>
+                <!-- Column containing the descriptive text for Concert Choir -->
+                <div class="col-12 col-md-4 vertical-center text-center px-4">
+                    <h5 class="mt-2 mt-lg-0">This section of vocalists works through various exercises to become an
+                        elite singer.
+                        Students
+                        work
+                        on
+                        range, expression and balance as an ensemble. The choir also works on various pieces of
+                        repertoire. Students will also be able to attend various events, like the district Chorus
+                        Festival.
+                    </h5>
+                </div>
+                <!-- Additional Concert Choir image for medium and larger screens -->
+                <div class="d-none d-md-flex col-4 col-lg-2 ps-1 ps-lg-0 pe-2 pe-lg-0 vertical-center"><img
+                        class="img-fluid w-100 rounded" src="imgs/chorus-2.jpg" alt="Concert choir performing"></div>
+            </div>
+            <!-- Section for the Pop Music class/ensemble -->
+            <div class="row ensembles pb-2 pb-lg-5 inClass" id="pop_music">
+                <!-- Banner for Pop Music on medium and larger screens -->
+                <div class="col-12 d-none d-md-flex ensemble-banners mb-2 mb-lg-5" id="pop-music-banner">
+                    <div class="corner-borders">
+                        <h1>POP MUSIC</h1>
+                    </div>
+                </div>
+                <!-- Banner for Pop Music on small screens -->
+                <div class="col-12 d-md-none ensemble-mobile-banners mb-2 mb-lg-5" id="pop-music-mobile-banner">
+                    <div class="corner-borders">
+                        <h1>POP MUSIC</h1>
+                    </div>
+                </div>
+                <!-- Empty column for spacing on large screens -->
+                <div class="col-2 d-none d-lg-block"></div>
+                <!-- Empty column reserved for an image or layout on medium and larger screens -->
+                <div class="d-none d-md-flex col-md-4 col-lg-2 ps-2 ps-lg-0 pe-1 pe-lg-0 vertical-center"></div>
+                <!-- Column containing the descriptive text for Pop Music -->
+                <div class="col-12 col-md-4 vertical-center text-center px-4">
+                    <h5 class="mt-2 mt-lg-0">This class exposes students to an array of musical genres. Music history,
+                        theory, analysis
+                        and
+                        expression are just a few concepts of many that students will cover throughout this semester
+                        course.
+                    </h5>
+                </div>
+                <!-- Empty column reserved for layout on medium and larger screens -->
+                <div class="d-none d-md-flex col-4 col-lg-2 ps-1 ps-lg-0 pe-2 pe-lg-0 vertical-center"></div>
+            </div>
+            <!-- Section for the Marching Band (extracurricular) -->
+            <div class="row ensembles pb-2 pb-lg-5 extracurricular" id="marching_band">
+                <!-- Banner for Marching Band on medium and larger screens -->
+                <div class="col-12 d-none d-md-flex ensemble-banners mb-2 mb-lg-5" id="mb-banner">
+                    <div class="corner-borders">
+                        <h1>MARCHING BAND</h1>
+                    </div>
+                </div>
+                <!-- Banner for Marching Band on small screens -->
+                <div class="col-12 d-md-none ensemble-mobile-banners mb-2 mb-lg-5" id="mb-mobile-banner">
+                    <div class="corner-borders">
+                        <h1>MARCHING BAND</h1>
+                    </div>
+                </div>
+                <!-- Empty column for spacing on large screens -->
+                <div class="col-2 d-none d-lg-block"></div>
+                <!-- Column containing the primary Marching Band image featuring Ms. Reich -->
+                <div class="col-6 col-lg-2 ps-2 ps-lg-0 pe-1 pe-lg-0 vertical-center"><img
+                        class="img-fluid w-100 rounded" src="imgs/mb-1.png"
+                        alt="Image of Ms. Reich, assistant band director for the marching band"></div>
+                <!-- Alternate Marching Band image for small screens -->
+                <div class="d-lg-none col-6 pe-2 ps-1"><img class="img-fluid w-100 rounded" src="imgs/mb-2.jpg"
+                        alt="The marching band in the stands, watching the football game"></div>
+                <!-- Column containing the descriptive text and leadership team for Marching Band -->
+                <div class="col-12 col-lg-4 vertical-center">
+                    <!-- Nested row for text content and leadership list with padding -->
+                    <div class="row mt-2 mt-lg-0 px-4">
+                        <!-- Full-width column for introductory text -->
+                        <div class="col-12 text-center">
+                            <h5>The pride of our school is displayed in the numerous performances
+                                of
+                                the Marching
+                                Mustangs!
+                                The
+                                marching band meets for several days of band camp in the last weeks of August to
+                                prepare
+                                for
+                                the
+                                Fall season of shows. Performances include all football games and various festivals.
+                                We
+                                are
+                                lucky to
+                                be supported by Mrs. Reich (as seen on the left) as our assistant band director, in
+                                addition
+                                to
+                                Mr.
+                                Ippolito.</h5>
+                            <!-- Heading for leadership team displayed on small screens -->
+                            <h5 class="d-lg-none">Here is the list of our current leadership team:</h5>
+                        </div>
+                        <!-- Heading for leadership team displayed on large screens -->
+                        <h5 class="d-none d-lg-block">Here is the list of our current leadership team:</h5>
+                        <!-- Left column for part of the leadership team list -->
+                        <div class="col-6">
+                            <ul>
+                                <li>Head Drum Major - Leah Trezza</li>
+                                <li>Assistant D.M. - Dylan Thomas</li>
+                                <li>Student Executive - Chananed Tangchitpiyanond</li>
+                                <li>Woodwind Capt. - Jacob Groesbeck</li>
+                                <li>Brass Captain - Nirek Dhage</li>
+                            </ul>
+                        </div>
+                        <!-- Right column for the remainder of the leadership team list -->
+                        <div class="col-6">
+                            <li>Drum Captain - Emma Yee</li>
+                            <li>Flute Section Leader - Emma Preap</li>
+                            <li>Clarinet/Sousaphone Sect. Leader - Talia Shrayef</li>
+                            <li>Sax Sect. Leader - Isabel Licona Klein</li>
+                            <li>Low Brass Sect. Leader - Sunay Bhatt</li>
+                        </div>
+                    </div>
+                </div>
+                <!-- Additional Marching Band image for large screens -->
+                <div class="d-none d-lg-flex col-4 col-lg-2 ps-1 ps-lg-0 pe-2 pe-lg-0 vertical-center"><img
+                        class="img-fluid w-100 rounded" src="imgs/mb-2.jpg"
+                        alt="The marching band in the stands, watching the football game"></div>
+            </div>
+            <!-- Uncomment to add into the website -->
+            <!-- <div class="row ensembles pb-2 pb-lg-5 extracurricular" id="wind_ensemble">
+                <div class="col-12 d-none d-md-flex ensemble-banners mb-2 mb-lg-5">
+                    <div class="corner-borders">
+                        <h1>WIND ENSEMBLE</h1>
+                    </div>
+                </div>
+                <div class="col-12 d-md-none ensemble-mobile-banners mb-2 mb-lg-5">
+                    <div class="corner-borders">
+                        <h1>WIND ENSEMBLE</h1>
+                    </div>
+                </div>
+                <div class="col-2 d-none d-lg-block"></div>
+                <div class="col-6 col-md-4 col-lg-2 ps-2 ps-lg-0 pe-1 pe-lg-0 vertical-center"><img class="img-fluid w-100 rounded"
+                        src="imgs/placeholder.png"></div>
+                <div class="d-md-none col-6 pe-2 ps-1"><img class="img-fluid w-100 rounded"
+                        src="imgs/placeholder.png"></div>
+                <div class="col-12 col-md-4 vertical-center text-center px-4">
+                    <h5 class="mt-2 mt-lg-0">This is the elite and honors ensemble for band students including woodwinds, brass, and percussion. This ensemble is an auditioned based ensemble and requires the highest caliber musicians. Students must be in good standing and actively participate in Concert Band as a requirement. This ensemble performs a challenging level of repertoire that is equivalent of college ensemble caliber. The Wind Ensemble performs at numerous school and community events in addition to the major concerts. Students are required to attend all after school rehearsals during the season of practicing. This ensemble primarily performs in the spring.</h5>
+                </div>
+                <div class="d-none d-md-flex col-4 col-lg-2 ps-1 ps-lg-0 pe-2 pe-lg-0 vertical-center"><img
+                        class="img-fluid w-100 rounded" src="imgs/placeholder.png"></div>
+            </div> -->
+            <!-- Section for the Jazz Band ensemble -->
+            <div class="row ensembles pb-2 pb-lg-5 extracurricular" id="jazz_band">
+                <!-- Banner for larger screens -->
+                <div class="col-12 d-none d-md-flex ensemble-banners mb-2 mb-lg-5" id="jazz-banner">
+                    <div class="corner-borders">
+                        <h1>JAZZ BAND</h1>
+                    </div>
+                </div>
+                <!-- Banner for mobile screens -->
+                <div class="col-12 d-md-none ensemble-mobile-banners mb-2 mb-lg-5" id="jazz-mobile-banner">
+                    <div class="corner-borders">
+                        <h1>JAZZ BAND</h1>
+                    </div>
+                </div>
+                <!-- Spacer for larger screens -->
+                <div class="col-2 d-none d-lg-block"></div>
+                <!-- Image for larger screens -->
+                <div class="col-6 col-md-4 col-lg-2 ps-2 ps-lg-0 pe-1 pe-lg-0 vertical-center">
+                    <img class="img-fluid w-100 rounded" src="imgs/jazz-1.jpeg"
+                        alt="The jazz band after performing in the Marlboro holiday lighting ceremony">
+                </div>
+                <!-- Image for mobile screens -->
+                <div class="d-md-none col-6 pe-2 ps-1">
+                    <img class="img-fluid w-100 rounded" src="imgs/jazz-2.jpg"
+                        alt="The jazz band after performing in the PNC arts center magic of the lights show">
+                </div>
+                <!-- Description text for Jazz Band -->
+                <div class="col-12 col-md-4 vertical-center text-center px-4">
+                    <h5 class="mt-2 mt-lg-0">This is an elite ensemble of musicians who perform various styles of jazz
+                        such as big band, swing, bebop, fusion and more. This group is a select group and meets after
+                        school from winter through spring.</h5>
+                </div>
+                <!-- Additional image for larger screens -->
+                <div class="d-none d-md-flex col-4 col-lg-2 ps-1 ps-lg-0 pe-2 pe-lg-0 vertical-center">
+                    <img class="img-fluid w-100 rounded" src="imgs/jazz-2.jpg"
+                        alt="The jazz band after performing in the PNC arts center magic of the lights show">
+                </div>
+            </div>
+
+            <!-- Section for the Pit Orchestra ensemble -->
+            <div class="row ensembles pb-2 pb-lg-5 extracurricular" id="pit_orchestra">
+                <!-- Banner for larger screens -->
+                <div class="col-12 d-none d-md-flex ensemble-banners mb-2 mb-lg-5" id="pit-banner">
+                    <div class="corner-borders">
+                        <h1>PIT ORCHESTRA</h1>
+                    </div>
+                </div>
+                <!-- Banner for mobile screens -->
+                <div class="col-12 d-md-none ensemble-mobile-banners mb-2 mb-lg-5" id="pit-mobile-banner">
+                    <div class="corner-borders">
+                        <h1>PIT ORCHESTRA</h1>
+                    </div>
+                </div>
+                <!-- Spacer for larger screens -->
+                <div class="col-2 d-none d-lg-block"></div>
+                <!-- Image for larger screens -->
+                <div class="col-6 col-md-4 col-lg-2 ps-2 ps-lg-0 pe-1 pe-lg-0 vertical-center">
+                    <img class="img-fluid w-100 rounded" src="imgs/pit-1.png" alt="Yearbook photo of the pit orchestra">
+                </div>
+                <!-- Image for mobile screens -->
+                <div class="d-md-none col-6 pe-2 ps-1">
+                    <img class="img-fluid w-100 rounded" src="imgs/pit-2.jpg"
+                        alt="Picture of the pit orchestra from opening night of Chicago, the 2024 musical">
+                </div>
+                <!-- Description text for Pit Orchestra -->
+                <div class="col-12 col-md-4 vertical-center text-center px-4">
+                    <h5 class="mt-2 mt-lg-0">This is a select group of musicians who perform for the spring musical.
+                        This is a group that meets after school for numerous rehearsals to prepare for live shows
+                        performed in the spring. Musicianship skills are developed further in this group due to the
+                        intensity of Broadway musical repertoire!</h5>
+                </div>
+                <!-- Additional image for larger screens -->
+                <div class="d-none d-md-flex col-4 col-lg-2 ps-1 ps-lg-0 pe-2 pe-lg-0 vertical-center">
+                    <img class="img-fluid w-100 rounded" src="imgs/pit-2.jpg"
+                        alt="Picture of the pit orchestra from opening night of Chicago, the 2024 musical">
+                </div>
+            </div>
+
+            <!-- Section for the Chamber Ensembles -->
+            <div class="row ensembles pb-2 pb-lg-5 extracurricular" id="chamber_ensembles">
+                <!-- Banner for larger screens -->
+                <div class="col-12 d-none d-md-flex ensemble-banners mb-2 mb-lg-5" id="chamber-banner">
+                    <div class="corner-borders">
+                        <h1>CHAMBER ENSEMBLES</h1>
+                    </div>
+                </div>
+                <!-- Banner for mobile screens -->
+                <div class="col-12 d-md-none ensemble-mobile-banners mb-2 mb-lg-5" id="chamber-mobile-banner">
+                    <div class="corner-borders">
+                        <h1>CHAMBER ENSEMBLES</h1>
+                    </div>
+                </div>
+                <!-- Spacer for larger screens -->
+                <div class="col-2 d-none d-lg-block"></div>
+                <!-- Image for larger screens -->
+                <div class="col-6 col-md-4 col-lg-2 ps-2 ps-lg-0 pe-1 pe-lg-0 vertical-center">
+                    <img class="img-fluid w-100 rounded" src="imgs/chamber-1.jpg"
+                        alt="Members of the chamber strings ensemble performing">
+                </div>
+                <!-- Image for mobile screens -->
+                <div class="d-md-none col-6 pe-2 ps-1">
+                    <img class="img-fluid w-100 rounded" src="imgs/chamber-2.jpg"
+                        alt="Members of a clarinet quartet performing">
+                </div>
+                <!-- Description text for Chamber Ensembles -->
+                <div class="col-12 col-md-4 vertical-center text-center px-4">
+                    <h5 class="mt-2 mt-lg-0">Marlboro HS is gifted with many talented musicians. Various select groups
+                        meet in school and outside of school to rehearse challenging small ensemble repertoire. They
+                        have numerous opportunities to perform for the school and the community in addition to concerts.
+                    </h5>
+                </div>
+                <!-- Additional image for larger screens -->
+                <div class="d-none d-md-flex col-4 col-lg-2 ps-1 ps-lg-0 pe-2 pe-lg-0 vertical-center">
+                    <img class="img-fluid w-100 rounded" src="imgs/chamber-2.jpg"
+                        alt="Members of a clarinet quartet performing">
+                </div>
+            </div>
+
+            <!-- End of the main content section -->
+        </div>
+    </main>
+
+    <!-- Footer Section -->
+    <footer id="footer">
+        <!-- Social media links -->
+        <a href="https://www.facebook.com/p/MHS-Music-Boosters-100064223690408/" target="_blank"
+            class="fa-links px-2 border-start border-end"><i class="fa-brands fa-facebook fa-2xl pointer"></i></a>
+        <a href="https://www.instagram.com/mrhs_music/" target="_blank" class="fa-links px-2 border-end"><i
+                class="fa-brands fa-instagram fa-2xl pointer"></i></a>
+        <a href="https://x.com/mhsmusicbooste1" target="_blank" class="fa-links px-2 border-end"><i
+                class="fa-brands fa-twitter fa-2xl pointer"></i></a>
+        <a href="https://www.tiktok.com/@mhsmustangsmusic" target="_blank" class="fa-links px-2 border-end"><i
+                class="fa-brands fa-tiktok fa-2xl pointer"></i></a><br>
+
+        <!-- Marlboro High School Music logo in the footer -->
+        <img src="imgs/logo.png" class="footer-logo-sizing mt-2" style="height: 69px;"
+            alt="Marlboro High School Music logo">
+
+        <!-- Contact email for Mr. Ippolito -->
+        <h6 class="mt-1"><b>mippolito@frhsd.com</b></h6>
+    </footer>
+
+    <!-- External JavaScript libraries -->
+    <script src="https://code.jquery.com/jquery-3.7.1.js"
+        integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    <script src="app.js"></script>
+    <script src="script.js"></script>
+
+    <!-- Bootstrap JavaScript libraries -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+        integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>

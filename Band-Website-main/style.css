@@ -1,0 +1,701 @@
+/* Set global font family */
+* {
+    font-family: Trebuchet MS, sans-serif;
+}
+
+/* Scrollbar styling */
+::-webkit-scrollbar {
+    width: 12px;
+    /* Set scrollbar width */
+}
+
+/* Scrollbar track styling */
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    /* Light gray background */
+}
+
+/* Scrollbar thumb styling */
+::-webkit-scrollbar-thumb {
+    background: #6686d6;
+    /* Blue scrollbar thumb */
+}
+
+/* Scrollbar thumb hover effect */
+::-webkit-scrollbar-thumb:hover {
+    background: #f8c857;
+    /* Yellow scrollbar thumb on hover */
+}
+
+/* Back to top button styling */
+#topBtn {
+    display: none;
+    /* Initially hidden */
+    position: fixed;
+    /* Stays fixed on screen */
+    bottom: 20px;
+    /* Position from bottom */
+    right: 30px;
+    /* Position from right */
+    z-index: 99;
+    /* Ensures it's above other elements */
+    border: none;
+    outline: none;
+    background-color: rgb(0, 0, 139);
+    /* Dark blue background */
+    color: white;
+    /* White text */
+    cursor: pointer;
+    padding: 15px;
+    /* Adds padding */
+    border-radius: 10px;
+    /* Rounded corners */
+    font-size: 18px;
+    /* Adjusts font size */
+}
+
+/* Back to top button hover effect */
+#topBtn:hover {
+    background-color: #fdb410;
+    /* Changes background to yellow on hover */
+}
+
+/* Prevents horizontal scrolling */
+body {
+    overflow-x: hidden;
+}
+
+/* Custom height classes */
+.cal-height {
+    height: 76.83863885839736vh;
+}
+
+.full-screen {
+    height: 110vh;
+}
+
+/* Footer styling */
+footer {
+    background-color: #39559b;
+    /* Dark blue background */
+    padding: 2rem;
+    text-align: center !important;
+    padding-bottom: .5rem !important;
+    padding-top: 1rem !important;
+    justify-content: center;
+    color: white;
+    /* White text */
+}
+
+/* Footer social media links */
+.fa-links {
+    color: rgb(251, 251, 251);
+    display: inline !important;
+}
+
+/* Footer logo size */
+.footer-logo-sizing {
+    height: 4rem;
+    width: auto;
+}
+
+/* Center content vertically */
+.vertical-center {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* Background color classes */
+.bg-1 {
+    background-color: #39559b !important;
+}
+
+.bg-2 {
+    background-color: #fdb410;
+}
+
+/* Drop shadow effects */
+.drop-shadow-1 {
+    box-shadow: 12px 12px 2px 1px #bd880d;
+}
+
+a.drop-shadow-1:hover {
+    box-shadow: 12px 12px 2px 1px #9c710b;
+}
+
+.drop-shadow-2 {
+    box-shadow: 12px 12px 2px 1px rgba(0, 0, 139, 0.2)
+}
+
+a.drop-shadow-2:hover {
+    box-shadow: 12px 12px 2px 1px rgba(0, 0, 0, 0.2)
+}
+
+.drop-shadow {
+    box-shadow: 12px 12px 2px 1px rgba(85, 81, 81, 0.2)
+}
+
+a.drop-shadow:hover {
+    box-shadow: 12px 12px 2px 1px rgba(0, 0, 0, 0.2)
+}
+
+/* Main home page banner */
+.home-main-banner {
+    background-image: url(imgs/home-banner.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 92vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-blend-mode: overlay;
+    background-color: #bdbdbd;
+}
+
+/* Main ensembles banner */
+.ensemble-main-banner {
+    background-image: url(imgs/ensembles-banner.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 32rem;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-blend-mode: overlay;
+    background-color: #bdbdbd;
+}
+
+/* Boosters banner */
+.boosters-main-banner {
+    background-image: url(imgs/boosters-banner.png) !important;
+}
+
+/* Section banners in ensembles.html */
+#mb-banner,
+#mb-mobile-banner {
+    background-image: url(imgs/marching-band-banner.jpg);
+}
+
+#conc-band-bannner,
+#conc-band-mobile-bannner {
+    background-image: url(imgs/band-banner.jpg);
+}
+
+#conc-chorus-bannner,
+#conc-chorus-mobile-bannner {
+    background-image: url(imgs/orch-banner.jpg);
+}
+
+#conc-choir-banner,
+#conc-choir-mobile-banner {
+    background-image: url(imgs/chorus-banner.jpg);
+}
+
+#pit-banner,
+#pit-mobile-banner {
+    background-image: url(imgs/pit-banner.png);
+}
+
+#jazz-banner,
+#jazz-mobile-banner {
+    background-image: url(imgs/jazz-banner.jpg);
+}
+
+#pop-music-banner,
+#pop-music-mobile-banner {
+    background-image: url(imgs/pop-banner.png);
+}
+
+#chamber-banner,
+#chamber-mobile-banner {
+    background-image: url(imgs/chamber-banner.jpg);
+}
+
+.ensemble-banners {
+    background-attachment: fixed;
+    /* Keeps the background fixed when scrolling */
+    background-position: center;
+    /* Centers the background image */
+    background-repeat: no-repeat;
+    /* Prevents the background image from repeating */
+    background-size: cover;
+    /* Ensures the background image covers the entire element */
+    height: 17.5rem;
+    /* Sets the height of the banner */
+    width: 100%;
+    /* Sets the width to cover the full width of the container */
+    display: flex;
+    /* Uses flexbox layout */
+    justify-content: center;
+    /* Centers the content horizontally */
+    align-items: center;
+    /* Centers the content vertically */
+    background-blend-mode: overlay;
+    /* Blends the background image with the background color */
+    background-color: #bdbdbd;
+    /* Sets the background color */
+}
+
+.ensemble-mobile-banners {
+    background-repeat: no-repeat;
+    /* Prevents the background image from repeating */
+    background-size: cover;
+    /* Ensures the background image covers the entire element */
+    height: 15rem;
+    /* Sets the height of the mobile banner */
+    width: 100%;
+    /* Sets the width to cover the full width of the container */
+    display: flex;
+    /* Uses flexbox layout */
+    justify-content: center;
+    /* Centers the content horizontally */
+    align-items: center;
+    /* Centers the content vertically */
+    background-blend-mode: overlay;
+    /* Blends the background image with the background color */
+    background-color: #bdbdbd;
+    /* Sets the background color */
+}
+
+#vue_app {
+    background-color: #fdb410;
+    /* Sets the background color for the vue_app container */
+    height: 23rem;
+}
+
+/* h1s sized for ensemble.html */
+h1 {
+    font-size: 7vw !important;
+    /* Sets the font size to be responsive based on viewport width */
+}
+
+.subtitle-text {
+    font-size: 5vw !important;
+    /* Sets the font size for subtitles to be responsive */
+}
+
+.corner-borders {
+    position: relative;
+    /* Allows positioning of pseudo-elements inside the container */
+    padding-left: 1.25vw;
+    /* Adds padding on the left */
+    padding-right: 1.25vw;
+    /* Adds padding on the right */
+}
+
+.corner-borders::before,
+.corner-borders::after {
+    content: '';
+    /* Generates an empty content for the pseudo-elements */
+    position: absolute;
+    /* Positions the pseudo-elements absolutely */
+    width: 15vw;
+    /* Sets the width for the borders */
+    height: 40%;
+    /* Sets the height of the borders */
+    background-color: transparent;
+    /* Keeps the background transparent */
+}
+
+.corner-borders::before {
+    top: 0;
+    /* Positions the top border */
+    left: 0;
+    /* Positions the left border */
+    border-top: 1vw solid #fdb410;
+    /* Creates a top border */
+    border-left: 1vw solid #fdb410;
+    /* Creates a left border */
+}
+
+.corner-borders::after {
+    bottom: 0;
+    /* Positions the bottom border */
+    right: 0;
+    /* Positions the right border */
+    border-bottom: 1vw solid #fdb410;
+    /* Creates a bottom border */
+    border-right: 1vw solid #fdb410;
+    /* Creates a right border */
+}
+
+/* Styling for checkboxes */
+.form-check {
+    position: relative;
+    /* Positions the checkbox container relative to its parent */
+    display: inline-block;
+    /* Displays the checkbox inline */
+    padding-left: 0 !important;
+    /* Removes left padding */
+}
+
+.form-check-input {
+    display: none;
+    /* Hides the actual checkbox */
+    visibility: hidden;
+    /* Hides the checkbox visually */
+}
+
+.form-check-label {
+    position: relative;
+    /* Positions the label element relative to its parent */
+    top: 1px;
+    /* Adjusts the position of the label */
+    width: 17px;
+    /* Sets the width of the label */
+    height: 17px;
+    /* Sets the height of the label */
+    border: 1px solid black;
+    /* Adds a black border around the label */
+    border-radius: 3px;
+    /* Rounds the corners of the label */
+    vertical-align: middle;
+    /* Vertically aligns the label with text */
+    transition: background 0.1s ease;
+    /* Adds a smooth transition effect on background change */
+    cursor: pointer;
+    /* Changes the cursor to a pointer when hovering over the label */
+    display: inline-block;
+    /* Makes the label an inline-block element */
+}
+
+.form-check-label:after {
+    content: '';
+    /* Generates an empty content for the pseudo-element */
+    position: absolute;
+    /* Positions the pseudo-element absolutely */
+    top: 1px;
+    /* Positions it 1px from the top */
+    left: 5px;
+    /* Positions it 5px from the left */
+    width: 5px;
+    /* Sets the width of the checkmark */
+    height: 11px;
+    /* Sets the height of the checkmark */
+    opacity: 0;
+    /* Makes the checkmark invisible by default */
+    transform: rotate(45deg) scale(0);
+    /* Rotates and scales the checkmark for hidden state */
+    border-right: 2px solid #fff;
+    /* Creates a white border for the checkmark */
+    border-bottom: 2px solid #fff;
+    /* Creates a white border for the checkmark */
+    transition: all 0.3s ease;
+    /* Adds a smooth transition effect */
+    transition-delay: 0.15s;
+    /* Delays the transition to synchronize with label animation */
+}
+
+.form-check-input:checked~.form-check-label {
+    border-color: transparent !important;
+    /* Hides the border when checked */
+    background: #39559b;
+    /* Changes background color when checked */
+    animation: jelly 0.6s ease !important;
+    /* Applies a jelly animation when checked */
+}
+
+.form-check-input:checked~.form-check-label:after {
+    opacity: 1 !important;
+    /* Makes the checkmark visible when checked */
+    transform: rotate(45deg) scale(1) !important;
+    /* Rotates and scales the checkmark to visible state */
+}
+
+.lbl {
+    margin-left: 5px;
+    /* Adds margin to the left of the label */
+    vertical-align: middle;
+    /* Vertically aligns the label */
+    cursor: pointer;
+    /* Changes the cursor to a pointer when hovering over the label */
+}
+
+@keyframes jelly {
+    from {
+        transform: scale(1, 1);
+        /* Starts at normal size */
+    }
+
+    30% {
+        transform: scale(1.25, 0.75);
+        /* Stretches horizontally and shrinks vertically */
+    }
+
+    40% {
+        transform: scale(0.75, 1.25);
+        /* Stretches vertically and shrinks horizontally */
+    }
+
+    50% {
+        transform: scale(1.15, 0.85);
+        /* Returns to slightly stretched size */
+    }
+
+    65% {
+        transform: scale(0.95, 1.05);
+        /* Slightly shrinks horizontally */
+    }
+
+    75% {
+        transform: scale(1.05, 0.95);
+        /* Slightly shrinks vertically */
+    }
+
+    to {
+        transform: scale(1, 1);
+        /* Ends at normal size */
+    }
+}
+
+/* Search Box Styling */
+.input {
+    position: relative;
+    /* Positions the input container relative to its parent */
+}
+
+.input__label {
+    position: absolute;
+    /* Positions the label absolutely inside the input */
+    left: 5px;
+    /* Moves the label 5px from the left */
+    top: 12.5%;
+    /* Vertically positions the label */
+    padding: calc(var(--size-bezel) * 0.75) calc(var(--size-bezel) * 0.5);
+    /* Adds padding based on custom variables */
+    margin: calc(var(--size-bezel) * 0.75 + 3px) calc(var(--size-bezel) * 0.5);
+    /* Adds margin based on custom variables */
+    white-space: nowrap;
+    /* Prevents the label text from wrapping */
+    transform: translate(0, 0);
+    /* Initially positions the label */
+    transform-origin: 0 0;
+    /* Defines the origin of the transform for animation */
+    background: transparent;
+    /* Keeps the background transparent */
+    transition: transform 120ms ease-in;
+    /* Smooth transition on transform */
+    font-weight: bold;
+    /* Makes the label text bold */
+    line-height: 1.2;
+    /* Adjusts the line height */
+}
+
+.input__field {
+    box-sizing: border-box;
+    /* Ensures padding is included in element's total width */
+    display: block;
+    /* Makes the input field block level */
+    width: 100%;
+    /* Makes the input field take up the full width of the container */
+    border: 3px solid currentColor;
+    /* Sets the border color to the current text color */
+    padding: calc(var(--size-bezel) * 1.5) var(--size-bezel);
+    /* Adds padding based on custom variables */
+    color: currentColor;
+    /* Sets text color to currentColor */
+    background: transparent;
+    /* Keeps the background transparent */
+    border-radius: var(--size-radius);
+    /* Rounds the corners based on custom variable */
+}
+
+.input__field:focus+.input__label,
+.input__field:not(:placeholder-shown)+.input__label {
+    transform: translate(0.25rem, -100%) scale(0.8);
+    /* Moves and scales the label when focused */
+    color: var(--color-accent);
+    /* Changes label color on focus */
+}
+
+/* Temp styling for navbar */
+.navbar {
+    background-color: #39559b !important;
+    /* Sets the navbar background color */
+}
+
+.navbar-nav {
+    --bs-nav-link-color: rgb(255 255 255) !important;
+    /* Sets the link color inside the navbar */
+    --bs-nav-link-hover-color: rgb(210 210 210 / 80%) !important;
+    /* Sets the hover link color */
+}
+
+.rotate-center {
+    -webkit-animation: rotate-center 0.6s ease-in-out both;
+    /* Animation for rotating the element */
+    animation: rotate-center 0.6s ease-in-out both;
+    /* Animation for rotating the element */
+}
+
+/* ----------------------------------------------
+ * Generated by Animista on 2025-1-16 13:41:43
+ * Licensed under FreeBSD License.
+ * See http://animista.net/license for more info. 
+ * w: http://animista.net, t: @cssanimista
+ * ---------------------------------------------- */
+
+/**
+ * ----------------------------------------
+ * animation rotate-center
+ * ----------------------------------------
+ */
+@-webkit-keyframes rotate-center {
+    0% {
+        -webkit-transform: rotate(0);
+        /* Starts at 0 degrees rotation */
+        transform: rotate(0);
+        /* Starts at 0 degrees rotation */
+    }
+
+    100% {
+        -webkit-transform: rotate(360deg);
+        /* Ends at 360 degrees rotation */
+        transform: rotate(360deg);
+        /* Ends at 360 degrees rotation */
+    }
+}
+
+@keyframes rotate-center {
+    0% {
+        -webkit-transform: rotate(0);
+        /* Starts at 0 degrees rotation */
+        transform: rotate(0);
+        /* Starts at 0 degrees rotation */
+    }
+
+    100% {
+        -webkit-transform: rotate(360deg);
+        /* Ends at 360 degrees rotation */
+        transform: rotate(360deg);
+        /* Ends at 360 degrees rotation */
+    }
+}
+
+.no-gutter {
+    padding-right: 0 !important;
+    /* Removes right padding */
+    padding-left: 0 !important;
+    /* Removes left padding */
+}
+
+.bg-blue {
+    background-color: #39559b;
+    /* Sets background color to blue */
+}
+
+dl,
+ol,
+ul {
+    margin-bottom: 0 !important;
+    /* Removes margin-bottom for these elements */
+}
+
+.btn-one {
+    color: #FFF;
+    /* Sets text color to white */
+    transition: all 0.3s;
+    /* Adds smooth transition effect */
+    position: relative;
+    /* Positions the button relatively */
+}
+
+.btn-one span {
+    transition: all 0.3s;
+    /* Adds smooth transition effect to the span */
+}
+
+.btn-one::before {
+    content: '';
+    /* Generates an empty content for the pseudo-element */
+    position: absolute;
+    /* Positions the pseudo-element absolutely */
+    bottom: 0;
+    /* Positions the bottom edge */
+    left: 0;
+    /* Positions the left edge */
+    width: 100%;
+    /* Makes the pseudo-element cover the full width */
+    height: 100%;
+    /* Makes the pseudo-element cover the full height */
+    z-index: 1;
+    /* Places the pseudo-element above other elements */
+    opacity: 0;
+    /* Makes it invisible by default */
+    transition: all 0.3s;
+    /* Smooth transition effect */
+    border-top-width: 1px;
+    /* Adds top border */
+    border-bottom-width: 1px;
+    /* Adds bottom border */
+    border-top-style: solid;
+    /* Defines top border style */
+    border-bottom-style: solid;
+    /* Defines bottom border style */
+    border-top-color: rgba(255, 255, 255, 0.5);
+    /* Adds semi-transparent white top border */
+    border-bottom-color: rgba(255, 255, 255, 0.5);
+    /* Adds semi-transparent white bottom border */
+    transform: scale(0.1, 1);
+    /* Initially scales the pseudo-element */
+}
+
+.btn-one:hover span {
+    letter-spacing: 2px;
+    /* Increases the letter spacing on hover */
+}
+
+.btn-one:hover::before {
+    opacity: 1;
+    /* Makes the pseudo-element visible on hover */
+    transform: scale(1, 1);
+    /* Restores its normal size */
+}
+
+.btn-one::after {
+    content: '';
+    /* Generates an empty content for the pseudo-element */
+    position: absolute;
+    /* Positions the pseudo-element absolutely */
+    bottom: 0;
+    /* Positions the bottom edge */
+    left: 0;
+    /* Positions the left edge */
+    width: 100%;
+    /* Makes the pseudo-element cover the full width */
+    height: 100%;
+    /* Makes the pseudo-element cover the full height */
+    z-index: 1;
+    /* Places the pseudo-element above other elements */
+    transition: all 0.3s;
+    /* Smooth transition effect */
+    background-color: rgba(255, 255, 255, 0.1);
+    /* Adds a semi-transparent white background */
+}
+
+.btn-one:hover::after {
+    opacity: 0;
+    /* Makes the pseudo-element invisible on hover */
+    transform: scale(0.1, 1);
+    /* Shrinks the pseudo-element on hover */
+}
+
+/* increase font size for accordion header for homepage */
+.accordion-button {
+    font-size: 1.25rem !important;
+}
+
+.navbar-toggler {
+    color: rgba(255, 255, 255, 0.53) !important;
+    border: var(--bs-border-width) solid rgb(255 255 255 / 85%) !important;
+    background-color: #ffffff4a !important;
+}
