@@ -10,7 +10,8 @@
                 " Grades 10-12"
             ],
             "image": "course-imgs/compsci.jpg",
-            "alt": "AI image of computer science."
+            "alt": "AI image of computer science.",
+             "url": "https://example.com/ap-compsci"
         },
         {
             "class": "Architecture",
@@ -22,7 +23,9 @@
                 "Grades 9-12"
             ],
             "image": "course-imgs/architecture.jpg",
-            "alt": "AI image of architecture."
+            "alt": "AI image of architecture.",
+             "url": "https://example.com/ap-compsci"
+            
         },
         {
             "class": "Engineering Graphics",
@@ -34,7 +37,8 @@
                 "Grades 9-12"
             ],
             "image": "course-imgs/engineering.jpg",
-            "alt": "AI image of engineering."
+            "alt": "AI image of engineering.",
+             "url": "https://example.com/ap-compsci"
         },
         {
             "class": "Graphic Design & Photography",
@@ -46,7 +50,8 @@
                 "Grades 11-12"
             ],
             "image": "course-imgs/graphicdesign.jpg",
-            "alt": "AI image of graphic design."
+            "alt": "AI image of graphic design.",
+             "url": "https://example.com/ap-compsci"
         },
         {
             "class": "Honors Innovation and Design",
@@ -58,7 +63,8 @@
                 "Grades 11-12"
             ],
             "image": "course-imgs/innovationdesign.jpg",
-            "alt": "AI image of innovation and design."
+            "alt": "AI image of innovation and design.",
+             "url": "https://example.com/ap-compsci"
         },
         {
             "class": "Technology Systems & Design",
@@ -70,7 +76,8 @@
                 "Grades 9-12"
             ],
             "image": "course-imgs/techsystems.jpg",
-            "alt": "AI image of technology systems."
+            "alt": "AI image of technology systems.",
+             "url": "https://example.com/ap-compsci"
         },
         {
             "class": "Video Editing",
@@ -82,7 +89,8 @@
                 "Grades 9-12"
             ],
             "image": "course-imgs/videoediting.jpg",
-            "alt": "AI image of video editing."
+            "alt": "AI image of video editing.",
+             "url": "https://example.com/ap-compsci"
         },
         {
             "class": "Web Design Pathway Program (WDPP)",
@@ -95,7 +103,8 @@
                 "3 NJIT Credits"
             ],
             "image": "course-imgs/webdesign.jpg",
-            "alt": "AI image of web design."
+            "alt": "AI image of web design.",
+             "url": "https://example.com/ap-compsci"
         },
         {
             "class": "Woodworking & Cabinetmaking",
@@ -107,7 +116,8 @@
                 "Grades 10-12"
             ],
             "image": "course-imgs/woodworking.jpg",
-            "alt": "AI image of wood working."
+            "alt": "AI image of wood working.",
+             "url": "https://example.com/ap-compsci"
         }
     ],
     "clubs": [
@@ -119,7 +129,8 @@
                 "See more information on TSA website"
             ],
             "image": "course-imgs/tsa.jpg",
-            "alt": "AI image of tsa."
+            "alt": "AI image of tsa.",
+             "url": "https://example.com/ap-compsci"
         },
         {
             "class": "Mustang Morning Show",
@@ -129,7 +140,8 @@
                 "See more information on Mustang Morning Show website"
             ],
             "image": "course-imgs/mustangmorningshow.jpg",
-            "alt": "AI image of the mustang morning show."
+            "alt": "AI image of the mustang morning show.",
+             "url": "https://example.com/ap-compsci"
         },
         {
             "class": "Coffee and Coding",
@@ -139,7 +151,8 @@
                 "See more information on Coffee & Coding website"
             ],
             "image": "course-imgs/codeandcoffee.jpg",
-            "alt": "AI image of coffee and coding."
+            "alt": "AI image of coffee and coding.",
+             "url": "https://example.com/ap-compsci"
         }
     ]
 }

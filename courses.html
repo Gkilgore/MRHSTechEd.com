@@ -99,7 +99,11 @@
                             :key="infoIndex">
                             <span class="bulletwords">{{ info }}</span>
                         </li>
-                        <button class="btn courses-btn">Click to visit website!</button>
+                        <a :href="course.url" target="_blank" rel="noopener noreferrer" v-if="course.url" class="text-center mt-3">
+                            <button class="btn courses-btn">
+                                Click to visit website!
+                            </button>
+                        </a>
                     </div>
                 </div>
             </div>
