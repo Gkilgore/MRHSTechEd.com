@@ -11,7 +11,7 @@
             ],
             "image": "course-imgs/compsci.jpg",
             "alt": "AI image of computer science.",
-             "url": "https://example.com/ap-compsci"
+             "url": "/pages/AP_CSP/index.html"
         },
         {
             "class": "Architecture",
@@ -24,7 +24,7 @@
             ],
             "image": "course-imgs/architecture.jpg",
             "alt": "AI image of architecture.",
-             "url": "https://example.com/ap-compsci"
+             "url": "/pages/Arch/index.html"
             
         },
         {
@@ -38,7 +38,7 @@
             ],
             "image": "course-imgs/engineering.jpg",
             "alt": "AI image of engineering.",
-             "url": "https://example.com/ap-compsci"
+             "url": "/pages/Engineering_Graphics/index.html"
         },
         {
             "class": "Graphic Design & Photography",
@@ -51,7 +51,7 @@
             ],
             "image": "course-imgs/graphicdesign.jpg",
             "alt": "AI image of graphic design.",
-             "url": "https://example.com/ap-compsci"
+             "url": "/pages/Graphic_Design/index.html"
         },
         {
             "class": "Honors Innovation and Design",
@@ -64,7 +64,7 @@
             ],
             "image": "course-imgs/innovationdesign.jpg",
             "alt": "AI image of innovation and design.",
-             "url": "https://example.com/ap-compsci"
+             "url": "/pages/Honnors_Innovation/index.html"
         },
         {
             "class": "Technology Systems & Design",
@@ -77,7 +77,7 @@
             ],
             "image": "course-imgs/techsystems.jpg",
             "alt": "AI image of technology systems.",
-             "url": "https://example.com/ap-compsci"
+             "url": "/pages/Tech_Systems/index.html"
         },
         {
             "class": "Video Editing",
@@ -90,7 +90,7 @@
             ],
             "image": "course-imgs/videoediting.jpg",
             "alt": "AI image of video editing.",
-             "url": "https://example.com/ap-compsci"
+             "url": "/pages/Video_Design/index.html"
         },
         {
             "class": "Web Design Pathway Program (WDPP)",
@@ -104,7 +104,7 @@
             ],
             "image": "course-imgs/webdesign.jpg",
             "alt": "AI image of web design.",
-             "url": "https://example.com/ap-compsci"
+             "url": "/pages/MRHS_WDPP/index.html"
         },
         {
             "class": "Woodworking & Cabinetmaking",
@@ -117,31 +117,31 @@
             ],
             "image": "course-imgs/woodworking.jpg",
             "alt": "AI image of wood working.",
-             "url": "https://example.com/ap-compsci"
+             "url": "/pages/Woodworking/index.html"
         }
     ],
     "clubs": [
         {
             "class": "Technology Student Association",
             "teacher": "Mr. Werntz",
-            "description": "Students are part of an organizaton where they can compete in various exciting competitions ranging from technology challenges to structural engineering.",
+            "description": "Students are part of an organization where they can compete in various exciting competitions ranging from technology challenges to structural engineering.",
             "requirements": [
                 "See more information on TSA website"
             ],
             "image": "course-imgs/tsa.jpg",
             "alt": "AI image of tsa.",
-             "url": "https://example.com/ap-compsci"
+             "url": "/pages/Tech_Student_Assoc/index.html"
         },
         {
             "class": "Mustang Morning Show",
             "teacher": "Mr. Werntz",
-            "description": "The Mustang Morning Show is aired on the last Friday of every month. It recaps the month with fun games, activites, news, and sports.",
+            "description": "The Mustang Morning Show is aired on the last Friday of every month. It recaps the month with fun games, activities, news, and sports.",
             "requirements": [
                 "See more information on Mustang Morning Show website"
             ],
             "image": "course-imgs/mustangmorningshow.jpg",
             "alt": "AI image of the mustang morning show.",
-             "url": "https://example.com/ap-compsci"
+             "url": "/pages/Mustang_Morning_Show/index.html"
         },
         {
             "class": "Coffee and Coding",
@@ -152,7 +152,7 @@
             ],
             "image": "course-imgs/codeandcoffee.jpg",
             "alt": "AI image of coffee and coding.",
-             "url": "https://example.com/ap-compsci"
+             "url": "/pages/Coffee_Coding/index.html"
         }
     ]
 }
