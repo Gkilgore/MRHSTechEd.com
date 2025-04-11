@@ -2,7 +2,7 @@
     "courses": [
         {
             "class": "AP Comp Sci Principles",
-            "teacher": "Mr. Kilgore & Mrs. Leonard",
+            "teacher": "Mr. Kilgore & Ms. Leonard",
             "description": "Students will develop computational thinking skills vital for success across all disciplines, such as using computational tools to analyze and study data and working with large data sets to analyze, visualize, and draw conclusions from trends.This course is unique in its focus on fostering student creativity.",
             "requirements": [
                 "21st century",
@@ -29,8 +29,8 @@
         },
         {
             "class": "Engineering Graphics",
-            "teacher": "Mrs. Russo",
-            "description": "Studnets will master traditional drafting and sketching techniques in addition to learning to use industry-standard CAD (computer-aided design) software. Exploration of ergonomic design, industrial design, and product redesign will also take place throughout the course.",
+            "teacher": "Ms. Russo",
+            "description": "Students will master traditional drafting and sketching techniques in addition to learning to use industry-standard CAD (computer-aided design) software. Exploration of ergonomic design, industrial design, and product redesign will also take place throughout the course.",
             "requirements": [
                 "21st century",
                 "5 Credits",
@@ -42,7 +42,7 @@
         },
         {
             "class": "Graphic Design & Photography",
-            "teacher": "Mrs. Leonard, Mrs. Russo, & Mr. Werntz",
+            "teacher": "Ms. Leonard, Ms. Russo, & Mr. Werntz",
             "description": "Students will participate in dynamic and competitive activities that emphasize critical and creative thinking. This course promotes leadership skills and career awareness.",
             "requirements": [
                 "21st century",
@@ -68,7 +68,7 @@
         },
         {
             "class": "Technology Systems & Design",
-            "teacher": "Mrs. Russo",
+            "teacher": "Ms. Russo",
             "description": "Provides an overview of technology's impact on society, including its historical context, current effects, and potential future developments.",
             "requirements": [
                 "21st century",
@@ -94,7 +94,7 @@
         },
         {
             "class": "Web Design Pathway Program (WDPP)",
-            "teacher": "Mr. Kilgore & Mrs. Leonard",
+            "teacher": "Mr. Kilgore & Ms. Leonard",
             "description": "This course discusses the concepts and skills required to plan, design and build advanced websites, with a focus on sophisticated user interaction enabled by programming the web browser (such as Chrome). This course takes place over 3 years.",
             "requirements": [
                 "21st century",
@@ -145,7 +145,7 @@
         },
         {
             "class": "Coffee and Coding",
-            "teacher": "Mr. Kilgore and Mrs. Leonard",
+            "teacher": "Mr. Kilgore and Ms. Leonard",
             "description": "Coding and Coffee occurs every friday with tutoring and extra help available in the morning. Occasionally, food and snacks will be offered along with building deeper connections through coding.",
             "requirements": [
                 "See more information on Coffee & Coding website"
