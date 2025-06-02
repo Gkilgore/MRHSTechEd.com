@@ -210,6 +210,11 @@ a.drop-shadow:hover {
     background-image: url(imgs/jazz-banner.jpg);
 }
 
+#wind-ensemble-banner,
+#wind-ensemble-mobile-banner {
+    background-image: url(imgs/chamber-banner.jpg);
+}
+
 #pop-music-banner,
 #pop-music-mobile-banner {
     background-image: url(imgs/pop-banner.png);

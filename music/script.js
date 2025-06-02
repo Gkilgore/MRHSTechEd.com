@@ -12,7 +12,7 @@ goldMembers.forEach(member => {
     $('#golMembers').append(`<li>${member}</li>`);
 });
 
-const silverMembers = ["Michelle Wolf", "Betty Chang", "Melanie Chazanoff", "Chutchauan T", "Monika Kokosza", "Bheemesh Dwarampuri", "Lauren Faulkner", "Archana Kannughatta"]
+const silverMembers = ["Michelle Wolf", "Betty Chang", "Melanie Chazanoff", "Chutchauan T", "Monika Kokosza", "Bheemesh Dwarampudi", "Lauren Faulkner", "Archana Kannughatta"]
 
 silverMembers.forEach(member => {
     $('#silMembers').append(`<li>${member}</li>`);
